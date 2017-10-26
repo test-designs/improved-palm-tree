@@ -386,9 +386,11 @@
                                                 <div flex="" class="flex">
                                                     <div layout="row" layout-align="end center" data-ng-hide="$ctrl.editMode" class="layout-align-end-center layout-row" aria-hidden="false">
                                                         <div class="ml1">
-                                                            <button class="md-button--skeleton md-button md-mbBroker-theme md-ink-ripple" type="button" style="background: #D7D7D7; border: none;">
-                                                                <span>RETURN TO DEAL</span>
-                                                            </button>
+                                                            <a href="https://test-designs.github.io/improved-palm-tree/deal-details.html">
+                                                                <button class="md-button--skeleton md-button md-mbBroker-theme md-ink-ripple" type="button" style="background: #D7D7D7; border: none;">
+                                                                    <span>RETURN TO DEAL</span>
+                                                                </button>
+                                                            </a>
                                                         </div>
                                                         <!-- ngIf: $ctrl.userOptions.feature_flags.vouchers_feature_flag -->
                                                     </div>
@@ -477,6 +479,12 @@
                                                         <deal-panel-tasks deal="$ctrl.deal" count="5" see-all-link="true" class="ng-isolate-scope">
                                                             <md-card-content>
                                                                 <img src="https://test-designs.github.io/improved-palm-tree/assets//images/installment-fees.png">
+                                                                <div hide-xs="" hide-sm="" class="controls hide-sm hide-xs ng-scope" data-ng-if="$ctrl.showActionButtons">
+                                                                        <button type="button" class="secondary-button">BACK</button>
+                                                                        <a href="https://test-designs.github.io/improved-palm-tree/voucher-4.html">
+                                                                            <button type="submit">CONTINUE</button>
+                                                                        </a>
+                                                                    </div>
                                                             </md-card-content>
                                                         </deal-panel-tasks>
                                                     </md-card>
