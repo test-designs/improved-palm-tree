@@ -9587,7 +9587,7 @@ commissions-filter {
 }
 .filter-menu button:before {
     content: "";
-    background: url(/assets/images/svg/filter.svg) no-repeat;
+    background: url('https://test-designs.github.io/improved-palm-tree/assets/images/svg/filter.svg') no-repeat;
     height: 1.125rem;
     width: 1.25rem;
     position: absolute;
@@ -10604,7 +10604,7 @@ main-sidebar {
 }
 .sort-menu button:before {
     content: "";
-    background: url(/assets/images/svg/sort.svg) no-repeat;
+    background: url('https://test-designs.github.io/improved-palm-tree/assets/images/svg/sort.svg') no-repeat;
     height: 1.25rem;
     width: 1.25rem;
     position: absolute;
@@ -12782,7 +12782,7 @@ tfoot {
 }
 .file-input label:before {
     position: absolute;
-    background: url(/assets/images/svg/add.svg) no-repeat;
+    background: url('https://test-designs.github.io/improved-palm-tree/assets/images/svg/add.svg') no-repeat;
     background-size: 100% 100%
 }
 .file-type {
@@ -12793,7 +12793,7 @@ tfoot {
 .file-type:before {
     position: absolute;
     top: calc(50% - 1rem);
-    background: url(/assets/images/svg/document.svg) no-repeat;
+    background: url('https://test-designs.github.io/improved-palm-tree/assets/images/svg/document.svg') no-repeat;
     background-size: 100% 100%;
     width: 2rem;
     height: 2rem
@@ -12941,7 +12941,7 @@ md-datepicker[type=date] {
 }
 .input-button button {
     text-indent: -9999px;
-    background: url(../assets/images/svg/calendar.svg) no-repeat;
+    background: url('https://test-designs.github.io/improved-palm-tree/assets/images/svg/calendar.svg') no-repeat;
     background-size: cover;
     position: absolute;
     top: calc(50% - .65rem)
@@ -12963,10 +12963,10 @@ md-datepicker[type=date] {
     top: calc(50% - .625rem)
 }
 .input-icon.assignee:after {
-    background: url(/assets/images/svg/person.svg) no-repeat
+    background: url('https://test-designs.github.io/improved-palm-tree/assets/images/svg/person.svg') no-repeat
 }
 .input-icon.search-icon:after {
-    background: url(/assets/images/svg/search.svg) no-repeat
+    background: url('https://test-designs.github.io/improved-palm-tree/assets/images/svg/search.svg') no-repeat
 }
 .input-icon input {
     width: 100%;
