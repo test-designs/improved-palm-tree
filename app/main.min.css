@@ -8120,7 +8120,7 @@ md-list.md-mbBroker-dark-theme md-list-item .md-list-item-inner {
     font-size: inherit;
     color: #8e8e93;
     margin: 0 .5em;
-    content: "â€“"
+    content: ""
 }
 .archived:before,
 .dash-delimiter li:last-child:after,
