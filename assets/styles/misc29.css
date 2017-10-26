@@ -1,0 +1,430 @@
+md-autocomplete.md-mbBroker-theme {
+    background: rgb(255, 255, 255);
+}
+
+md-autocomplete.md-mbBroker-theme[disabled]:not([md-floating-label]) {
+    background: rgb(245, 245, 245);
+}
+
+md-autocomplete.md-mbBroker-theme button md-icon path {
+    fill: rgb(117, 117, 117);
+}
+
+md-autocomplete.md-mbBroker-theme button:after {
+    background: rgba(117, 117, 117, 0.3);
+}
+
+.md-autocomplete-suggestions-container.md-mbBroker-theme {
+    background: rgb(255, 255, 255);
+}
+
+.md-autocomplete-suggestions-container.md-mbBroker-theme li {
+    color: rgb(33, 33, 33);
+}
+
+.md-autocomplete-suggestions-container.md-mbBroker-theme li .highlight {
+    color: rgb(117, 117, 117);
+}
+
+.md-autocomplete-suggestions-container.md-mbBroker-theme li:hover,
+.md-autocomplete-suggestions-container.md-mbBroker-theme li.selected {
+    background: rgb(238, 238, 238);
+}
+
+md-bottom-sheet.md-mbBroker-theme {
+    background-color: rgb(250, 250, 250);
+    border-top-color: rgb(224, 224, 224);
+}
+
+md-bottom-sheet.md-mbBroker-theme .md-subheader {
+    background-color: rgb(250, 250, 250);
+}
+
+md-backdrop {
+    background-color: rgba(33, 33, 33, 0.0);
+}
+
+md-backdrop.md-opaque.md-mbBroker-theme {
+    background-color: rgba(33, 33, 33, 1.0);
+}
+
+.md-button.md-mbBroker-theme:not([disabled]):hover {
+    background-color: rgba(158, 158, 158, 0.2);
+}
+
+.md-button.md-mbBroker-theme:not([disabled]).md-focused {
+    background-color: rgba(158, 158, 158, 0.2);
+}
+
+.md-button.md-mbBroker-theme:not([disabled]).md-icon-button:hover {
+    background-color: transparent;
+}
+
+.md-button.md-mbBroker-theme.md-raised {
+    color: rgb(33, 33, 33);
+    background-color: rgb(250, 250, 250);
+}
+
+.md-button.md-mbBroker-theme.md-raised:not([disabled]) md-icon {
+    color: rgb(33, 33, 33);
+}
+
+.md-button.md-mbBroker-theme.md-raised:not([disabled]):hover {
+    background-color: rgb(250, 250, 250);
+}
+
+.md-button.md-mbBroker-theme.md-raised:not([disabled]).md-focused {
+    background-color: rgb(238, 238, 238);
+}
+
+.md-button.md-mbBroker-theme.md-raised[disabled],
+.md-button.md-mbBroker-theme.md-fab[disabled] {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.md-button.md-mbBroker-theme[disabled] {
+    background-color: transparent;
+}
+
+md-card.md-mbBroker-theme {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+md-card.md-mbBroker-theme md-card-header md-card-avatar md-icon {
+    color: rgb(250, 250, 250);
+    background-color: rgba(0, 0, 0, 0.38);
+}
+
+md-checkbox.md-mbBroker-theme.md-checked .md-ripple {
+    color: rgb(117, 117, 117);
+}
+
+md-checkbox.md-mbBroker-theme[disabled].md-checked .md-icon {
+    background-color: rgba(0, 0, 0, 0.38);
+}
+
+md-checkbox.md-mbBroker-theme[disabled].md-checked .md-icon:after {
+    border-color: rgb(238, 238, 238);
+}
+
+md-chips.md-mbBroker-theme md-chip {
+    background: rgb(224, 224, 224);
+    color: rgb(66, 66, 66);
+}
+
+md-chips.md-mbBroker-theme md-chip md-icon {
+    color: rgb(97, 97, 97);
+}
+
+md-chips.md-mbBroker-theme md-chip._md-chip-editing {
+    background: transparent;
+    color: rgb(66, 66, 66);
+}
+
+md-chips.md-mbBroker-theme md-chip-remove .md-button md-icon path {
+    fill: rgb(158, 158, 158);
+}
+
+.md-contact-suggestion span.md-contact-email {
+    color: rgb(189, 189, 189);
+}
+
+md-content.md-mbBroker-theme {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: rgb(250, 250, 250);
+}
+
+/** Theme styles for mdCalendar. */
+
+.md-calendar.md-mbBroker-theme {
+    background: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.md-calendar.md-mbBroker-theme tr:last-child td {
+    border-bottom-color: rgb(238, 238, 238);
+}
+
+.md-mbBroker-theme .md-calendar-day-header {
+    background: rgb(224, 224, 224);
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.md-calendar-date.md-focus .md-mbBroker-theme .md-calendar-date-selection-indicator,
+.md-mbBroker-theme .md-calendar-date-selection-indicator:hover {
+    background: rgb(224, 224, 224);
+}
+
+.md-mbBroker-theme .md-calendar-date-disabled,
+.md-mbBroker-theme .md-calendar-month-label-disabled {
+    color: rgba(0, 0, 0, 0.435);
+}
+
+.md-mbBroker-theme .md-datepicker-calendar-pane {
+    border-color: rgb(255, 255, 255);
+}
+
+.md-mbBroker-theme .md-datepicker-calendar {
+    background: rgb(255, 255, 255);
+}
+
+.md-mbBroker-theme .md-datepicker-input-mask-opaque {
+    box-shadow: 0 0 0 9999px rgb(255, 255, 255);
+}
+
+.md-mbBroker-theme .md-datepicker-open .md-datepicker-input-container {
+    background: rgb(255, 255, 255);
+}
+
+md-dialog.md-mbBroker-theme {
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.87);
+}
+
+md-input-container.md-mbBroker-theme .md-input[disabled],
+[disabled] md-input-container.md-mbBroker-theme .md-input {
+    border-bottom-color: transparent;
+    color: rgba(0, 0, 0, 0.38);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.38) 33%, transparent 0%);
+    background-image: -ms-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.38) 100%);
+}
+
+md-list.md-mbBroker-theme .md-proxy-focus.md-focused div.md-no-style {
+    background-color: rgb(245, 245, 245);
+}
+
+md-list.md-mbBroker-theme md-list-item .md-avatar-icon {
+    background-color: rgba(0, 0, 0, 0.38);
+    color: rgb(250, 250, 250);
+}
+
+md-menu-content.md-mbBroker-theme {
+    background-color: rgb(255, 255, 255);
+}
+
+md-menu-content.md-mbBroker-theme md-menu-item {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+md-menu-content.md-mbBroker-theme md-menu-item md-icon {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+md-menu-content.md-mbBroker-theme md-menu-item .md-button[disabled] {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+md-menu-content.md-mbBroker-theme md-menu-item .md-button[disabled] md-icon {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+md-menu-content.md-mbBroker-theme md-menu-divider {
+    background-color: rgba(0, 0, 0, 0.11);
+}
+
+md-menu-bar.md-mbBroker-theme md-menu.md-open>button,
+md-menu-bar.md-mbBroker-theme md-menu>button:focus {
+    outline: none;
+    background: rgb(238, 238, 238);
+}
+
+md-menu-bar.md-mbBroker-theme.md-open:not(.md-keyboard-mode) md-menu:hover>button {
+    background-color: rgba(158, 158, 158, 0.2);
+}
+
+md-menu-bar.md-mbBroker-theme:not(.md-keyboard-mode):not(.md-open) md-menu button:hover,
+md-menu-bar.md-mbBroker-theme:not(.md-keyboard-mode):not(.md-open) md-menu button:focus {
+    background: transparent;
+}
+
+md-menu-content.md-mbBroker-theme .md-menu>.md-button:after {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+md-menu-content.md-mbBroker-theme .md-menu.md-open>.md-button {
+    background-color: rgba(158, 158, 158, 0.2);
+}
+
+md-toolbar.md-mbBroker-theme.md-menu-toolbar {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+md-toolbar.md-mbBroker-theme.md-menu-toolbar md-toolbar-filler md-icon {
+    color: rgba(255, 255, 255, 0.87);
+}
+
+md-nav-bar.md-mbBroker-theme .md-nav-bar {
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+.md-panel {
+    background-color: rgba(33, 33, 33, 0.0);
+}
+
+.md-panel._md-panel-backdrop.md-mbBroker-theme {
+    background-color: rgba(33, 33, 33, 1.0);
+}
+
+md-select.md-mbBroker-theme[disabled] .md-select-value {
+    border-bottom-color: transparent;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.38) 33%, transparent 0%);
+    background-image: -ms-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.38) 100%);
+}
+
+md-select-menu.md-mbBroker-theme md-content {
+    background: rgb(255, 255, 255);
+}
+
+md-select-menu.md-mbBroker-theme md-content md-optgroup {
+    color: rgba(117, 117, 117, 0.87);
+}
+
+md-select-menu.md-mbBroker-theme md-content md-option {
+    color: rgba(33, 33, 33, 0.87);
+}
+
+md-select-menu.md-mbBroker-theme md-content md-option[disabled] .md-text {
+    color: rgba(189, 189, 189, 0.87);
+}
+
+md-select-menu.md-mbBroker-theme md-content md-option:not([disabled]):focus,
+md-select-menu.md-mbBroker-theme md-content md-option:not([disabled]):hover {
+    background: rgb(238, 238, 238);
+}
+
+.md-checkbox-enabled.md-mbBroker-theme[selected] .md-ripple {
+    color: rgb(117, 117, 117);
+}
+
+.md-checkbox-enabled.md-mbBroker-theme md-option .md-text {
+    color: rgba(33, 33, 33, 0.87);
+}
+
+md-sidenav.md-mbBroker-theme,
+md-sidenav.md-mbBroker-theme md-content {
+    background-color: rgb(255, 255, 255);
+}
+
+md-slider.md-mbBroker-theme .md-track {
+    background-color: rgba(0, 0, 0, 0.38);
+}
+
+md-slider.md-mbBroker-theme .md-track-ticks {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+md-slider.md-mbBroker-theme .md-disabled-thumb {
+    border-color: rgb(250, 250, 250);
+    background-color: rgb(250, 250, 250);
+}
+
+md-slider.md-mbBroker-theme.md-min .md-thumb:after {
+    background-color: rgb(250, 250, 250);
+    border-color: rgba(0, 0, 0, 0.38);
+}
+
+md-slider.md-mbBroker-theme.md-min .md-focus-ring {
+    background-color: rgba(0, 0, 0, 0.38);
+}
+
+md-slider.md-mbBroker-theme.md-min[md-discrete] .md-thumb:after {
+    background-color: rgba(0, 0, 0, 0.87);
+    border-color: transparent;
+}
+
+md-slider.md-mbBroker-theme.md-min[md-discrete] .md-sign {
+    background-color: rgb(189, 189, 189);
+}
+
+md-slider.md-mbBroker-theme.md-min[md-discrete] .md-sign:after {
+    border-top-color: rgb(189, 189, 189);
+}
+
+md-slider.md-mbBroker-theme.md-min[md-discrete][md-vertical] .md-sign:after {
+    border-top-color: transparent;
+    border-left-color: rgb(189, 189, 189);
+}
+
+md-slider.md-mbBroker-theme[disabled]:not(.md-min) .md-thumb:after,
+md-slider.md-mbBroker-theme[disabled][md-discrete] .md-thumb:after {
+    background-color: rgba(0, 0, 0, 0.38);
+    border-color: transparent;
+}
+
+md-slider.md-mbBroker-theme[disabled][readonly] .md-sign {
+    background-color: rgb(189, 189, 189);
+}
+
+md-slider.md-mbBroker-theme[disabled][readonly] .md-sign:after {
+    border-top-color: rgb(189, 189, 189);
+}
+
+md-slider.md-mbBroker-theme[disabled][readonly][md-vertical] .md-sign:after {
+    border-top-color: transparent;
+    border-left-color: rgb(189, 189, 189);
+}
+
+md-slider.md-mbBroker-theme[disabled][readonly] .md-disabled-thumb {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.md-subheader.md-mbBroker-theme {
+    color: rgba(0, 0, 0, 0.54);
+    background-color: rgb(250, 250, 250);
+}
+
+md-switch.md-mbBroker-theme .md-ink-ripple {
+    color: rgb(158, 158, 158);
+}
+
+md-switch.md-mbBroker-theme .md-thumb {
+    background-color: rgb(250, 250, 250);
+}
+
+md-switch.md-mbBroker-theme .md-bar {
+    background-color: rgb(158, 158, 158);
+}
+
+md-switch.md-mbBroker-theme[disabled] .md-thumb {
+    background-color: rgb(189, 189, 189);
+}
+
+md-switch.md-mbBroker-theme[disabled] .md-bar {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+md-toast.md-mbBroker-theme .md-toast-content {
+    background-color: #323232;
+    color: rgb(250, 250, 250);
+}
+
+md-toast.md-mbBroker-theme .md-toast-content .md-button {
+    color: rgb(250, 250, 250);
+}
+
+md-tabs.md-mbBroker-theme md-tabs-wrapper {
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+md-tooltip.md-mbBroker-theme {
+    color: rgba(255, 255, 255, 0.87);
+}
+
+md-tooltip.md-mbBroker-theme .md-content {
+    background-color: rgb(97, 97, 97);
+}
+
+/*  Only used with Theme processes */
+
+html.md-mbBroker-theme,
+body.md-mbBroker-theme {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: rgb(250, 250, 250);
+}

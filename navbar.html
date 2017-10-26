@@ -1,0 +1,68 @@
+<md-nav-bar class="deal-detail-nav-bar mt1 md-mbBroker-theme" style="margin: 0;">
+        <div class="md-nav-bar">
+            <nav role="navigation">
+                <ul class="_md-nav-bar-list" ng-transclude="" role="listbox" tabindex="0" ng-focus="ctrl.onFocus()" ng-blur="ctrl.onBlur()"
+                    ng-keydown="ctrl.onKeydown($event)" aria-label="">
+                    <div class="main-nav-tabs" style="margin: 0 auto;">
+                        <li class="md-nav-item ng-isolate-scope" role="option" aria-selected="true" md-nav-sref="app.dealsDetail.overview" name="app.dealsDetail.overview">
+                            <!-- ngIf: ctrl.mdNavSref -->
+                            <a class="_md-nav-button md-accent md-button ng-scope md-mbBroker-theme md-ink-ripple md-active md-primary" ng-transclude=""
+                                ng-if="ctrl.mdNavSref" ng-class="ctrl.getNgClassMap()" tabindex="-1"
+                                ui-sref="app.dealsDetail.overview" href="/deals/detail/373254/overview"
+                                style="">
+                                <span ng-transclude="" class="_md-nav-button-text ng-scope">Overview</span>
+                            </a>
+                            <!-- end ngIf: ctrl.mdNavSref -->
+                            <!-- ngIf: ctrl.mdNavHref -->
+                            <!-- ngIf: ctrl.mdNavClick -->
+                        </li>
+                        <!-- ngIf: $ctrl.activeTabs['notes'] -->
+                        <li class="md-nav-item ng-scope ng-isolate-scope" role="option" aria-selected="false" md-nav-sref="app.dealsDetail.notes"
+                            name="app.dealsDetail.notes" data-e2e="deal-detail-nav-notes" data-ng-if="$ctrl.activeTabs['notes']">
+                            <!-- ngIf: ctrl.mdNavSref -->
+                            <a class="_md-nav-button md-accent md-button ng-scope md-mbBroker-theme md-ink-ripple md-unselected" ng-transclude="" ng-if="ctrl.mdNavSref"
+                                ng-class="ctrl.getNgClassMap()" tabindex="-1" ui-sref="app.dealsDetail.notes"
+                                href="/deals/detail/373254/notes">
+                                <span ng-transclude="" class="_md-nav-button-text ng-scope">Properties</span>
+                            </a>
+                            <!-- end ngIf: ctrl.mdNavSref -->
+                            <!-- ngIf: ctrl.mdNavHref -->
+                            <!-- ngIf: ctrl.mdNavClick -->
+                        </li>
+                        <!-- end ngIf: $ctrl.activeTabs['notes'] -->
+                        <!-- ngIf: $ctrl.activeTabs['tasks'] -->
+                        <li class="md-nav-item ng-scope ng-isolate-scope" role="option" aria-selected="false" md-nav-sref="app.dealsDetail.tasks"
+                            name="app.dealsDetail.tasks" data-e2e="deal-detail-nav-tasks" data-ng-if="$ctrl.activeTabs['tasks']">
+                            <!-- ngIf: ctrl.mdNavSref -->
+                            <a class="_md-nav-button md-accent md-button ng-scope md-mbBroker-theme md-ink-ripple md-unselected" ng-transclude="" ng-if="ctrl.mdNavSref"
+                                ng-class="ctrl.getNgClassMap()" tabindex="-1" ui-sref="app.dealsDetail.tasks"
+                                href="/deals/detail/373254/tasks">
+                                <span ng-transclude="" class="_md-nav-button-text ng-scope">Landlord Information</span>
+                            </a>
+                            <!-- end ngIf: ctrl.mdNavSref -->
+                            <!-- ngIf: ctrl.mdNavHref -->
+                            <!-- ngIf: ctrl.mdNavClick -->
+                        </li>
+                        <!-- end ngIf: $ctrl.activeTabs['tasks'] -->
+                        <!-- ngIf: $ctrl.activeTabs['attachments'] -->
+                        <li class="md-nav-item ng-scope ng-isolate-scope" role="option" aria-selected="false" md-nav-sref="app.dealsDetail.attachments"
+                            name="app.dealsDetail.attachments" data-ng-if="$ctrl.activeTabs['attachments']">
+                            <!-- ngIf: ctrl.mdNavSref -->
+                            <a class="_md-nav-button md-accent md-button ng-scope md-mbBroker-theme md-ink-ripple md-unselected" ng-transclude="" ng-if="ctrl.mdNavSref"
+                                ng-class="ctrl.getNgClassMap()" tabindex="-1" ui-sref="app.dealsDetail.attachments"
+                                href="/deals/detail/373254/files">
+                                <span ng-transclude="" class="_md-nav-button-text ng-scope">Tenant Information</span>
+                            </a>
+                            <!-- end ngIf: ctrl.mdNavSref -->
+                            <!-- ngIf: ctrl.mdNavHref -->
+                            <!-- ngIf: ctrl.mdNavClick -->
+                        </li>
+                    </div>
+                    <div class="commissions-nav-tab ng-scope">
+                        <!-- ngIf: $ctrl.activeTabs['financials'] && $ctrl.deal.deal_life_cycle_stage === 'closed' && $ctrl.userOptions.feature_flags.deal_financials_feature_flag -->
+                    </div>
+                </ul>
+            </nav>
+            <md-nav-ink-bar class="_md-right" style="left: 150px; width: 75px;"></md-nav-ink-bar>
+        </div>
+    </md-nav-bar>

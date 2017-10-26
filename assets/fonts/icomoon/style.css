@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?gddl91');
+    src:  url('fonts/icomoon.eot?gddl91#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.woff2?gddl91') format('woff2'),
+      url('fonts/icomoon.ttf?gddl91') format('truetype'),
+      url('fonts/icomoon.woff?gddl91') format('woff'),
+      url('fonts/icomoon.svg?gddl91#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-outlook:before {
+    content: "\e920";
+  }
+  .icon-play:before {
+    content: "\e92d";
+  }
+  .icon-deal-iq-icon:before {
+    content: "\e921";
+  }
+  .icon-star-filled:before {
+    content: "\e91d";
+  }
+  .icon-note:before {
+    content: "\e908";
+  }
+  .icon-paperclip:before {
+    content: "\e909";
+  }
+  .icon-building2:before {
+    content: "\e905";
+  }
+  .icon-camera:before {
+    content: "\e944";
+  }
+  .icon-bin:before {
+    content: "\e904";
+  }
+  .icon-close-circle:before {
+    content: "\e907";
+  }
+  .icon-sort-asc:before {
+    content: "\e90a";
+  }
+  .icon-sort:before {
+    content: "\e90d";
+  }
+  .icon-sort-desc:before {
+    content: "\e919";
+  }
+  .icon-cycle:before {
+    content: "\e906";
+  }
+  .icon-more-h:before {
+    content: "\e92a";
+  }
+  .icon-more:before {
+    content: "\e943";
+  }
+  .icon-help:before {
+    content: "\e913";
+  }
+  .icon-more-v:before {
+    content: "\e930";
+  }
+  .icon-edit:before {
+    content: "\e903";
+  }
+  .icon-arrow-right-thin:before {
+    content: "\e92c";
+  }
+  .icon-storagebox:before {
+    content: "\e926";
+  }
+  .icon-company:before {
+    content: "\e91e";
+  }
+  .icon-warning:before {
+    content: "\e911";
+  }
+  .icon-cash-dollars:before {
+    content: "\e91a";
+  }
+  .icon-chat-help:before {
+    content: "\e914";
+  }
+  .icon-bin2:before {
+    content: "\e915";
+  }
+  .icon-contacts:before {
+    content: "\e916";
+  }
+  .icon-star-outline:before {
+    content: "\e928";
+  }
+  .icon-chat:before {
+    content: "\e91b";
+  }
+  .icon-envelope:before {
+    content: "\e91c";
+  }
+  .icon-phone:before {
+    content: "\e923";
+  }
+  .icon-building:before {
+    content: "\e91f";
+  }
+  .icon-user:before {
+    content: "\e922";
+  }
+  .icon-briefcase:before {
+    content: "\e90b";
+  }
+  .icon-minus-square:before {
+    content: "\e90e";
+  }
+  .icon-plus-square:before {
+    content: "\e90f";
+  }
+  .icon-share:before {
+    content: "\e910";
+  }
+  .icon-clipboard:before {
+    content: "\e912";
+  }
+  .icon-clock:before {
+    content: "\e935";
+  }
+  .icon-alarm:before {
+    content: "\e937";
+  }
+  .icon-calendar:before {
+    content: "\e938";
+  }
+  .icon-download:before {
+    content: "\e93b";
+  }
+  .icon-magnifier:before {
+    content: "\e93c";
+  }
+  .icon-cog:before {
+    content: "\e93d";
+  }
+  .icon-checkmark:before {
+    content: "\e619";
+  }
+  .icon-plus:before {
+    content: "\e611";
+  }
+  .icon-chevron-down:before {
+    content: "\e601";
+  }
+  .icon-chevron-left:before {
+    content: "\e602";
+  }
+  .icon-chevron-right:before {
+    content: "\e603";
+  }
+  .icon-chevron-up:before {
+    content: "\e604";
+  }
+  .icon-close:before {
+    content: "\e606";
+  }
+  .icon-load:before {
+    content: "\e609";
+  }
+  .icon-map-pin:before {
+    content: "\e60c";
+  }
+  .icon-cloud-sync:before {
+    content: "\e924";
+  }
+  .icon-dropdown:before {
+    content: "\e929";
+  }
+  .icon-plus-circle-solid:before {
+    content: "\e918";
+  }
+  .icon-menu:before {
+    content: "\e902";
+  }
+  .icon-undo:before {
+    content: "\e925";
+  }
+  .icon-new-tab:before {
+    content: "\e927";
+  }
+  .icon-plus-circle-outline:before {
+    content: "\e900";
+  }
+  .icon-info-circle:before {
+    content: "\e901";
+  }
+  .icon-italic:before {
+    content: "\e90c";
+  }
+  .icon-bold:before {
+    content: "\e917";
+  }
+  .icon-chevron-up-down:before {
+    content: "\e618";
+  }
+  .icon-image:before {
+    content: "\e623";
+  }
+  .icon-document:before {
+    content: "\e92b";
+  }
+  

@@ -1,0 +1,665 @@
+<html>
+
+<head>
+    <title>Dashboard | CBRE Vouchering</title>
+    <meta name="viewport" content="user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+    <base href="/">
+    <link rel="stylesheet" href="/assets/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="/assets/styles/misc1.css">
+    <link rel="stylesheet" href="/assets/styles/misc2.css">
+    <link rel="stylesheet" href="/assets/styles/misc3.css">
+    <link rel="stylesheet" href="/assets/styles/misc4.css">
+    <link rel="stylesheet" href="/assets/styles/misc5.css">
+    <link rel="stylesheet" href="/assets/styles/misc6.css">
+    <link rel="stylesheet" href="/assets/styles/misc7.css">
+    <link rel="stylesheet" href="/assets/styles/misc8.css">
+    <link rel="stylesheet" href="/assets/styles/misc9.css">
+    <link rel="stylesheet" href="/assets/styles/misc10.css">
+    <link rel="stylesheet" href="/assets/styles/misc11.css">
+    <link rel="stylesheet" href="/assets/styles/misc12.css">
+    <link rel="stylesheet" href="/assets/styles/misc13.css">
+    <link rel="stylesheet" href="/assets/styles/misc14.css">
+    <link rel="stylesheet" href="/assets/styles/misc15.css">
+    <link rel="stylesheet" href="/assets/styles/misc16.css">
+    <link rel="stylesheet" href="/assets/styles/misc17.css">
+    <link rel="stylesheet" href="/assets/styles/misc18.css">
+    <link rel="stylesheet" href="/assets/styles/misc19.css">
+    <link rel="stylesheet" href="/assets/styles/misc20.css">
+    <link rel="stylesheet" href="/assets/styles/misc21.css">
+    <link rel="stylesheet" href="/assets/styles/misc22.css">
+    <link rel="stylesheet" href="/assets/styles/misc23.css">
+    <link rel="stylesheet" href="/assets/styles/misc24.css">
+    <link rel="stylesheet" href="/assets/styles/misc25.css">
+    <link rel="stylesheet" href="/assets/styles/misc26.css">
+    <link rel="stylesheet" href="/assets/styles/misc27.css">
+    <link rel="stylesheet" href="/assets/styles/misc28.css">
+    <link rel="stylesheet" href="/assets/styles/misc29.css">
+    <link rel="stylesheet" href="/assets/styles/misc30.css">
+    <link rel="stylesheet" href="/assets/styles/misc31.css">
+    <link rel="stylesheet" href="/assets/styles/misc32.css">
+    <link rel="stylesheet" href="/assets/styles/misc33.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/assets/images/favicons/manifest.json">
+    <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#00a657">
+    <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="app/main.min.css">
+    <style type="text/css">
+        :root #header+#content>#left>#rlblock_left,
+        :root #main-content>[style="padding:10px 0 0 0 !important;"] {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body layout="row" class="layout-row">
+    <!-- uiView: -->
+    <data-ui-view id="main-view" layout="column" tabindex="-1" role="main" flex="" class="ng-scope layout-column flex">
+        <app class="ng-scope ng-isolate-scope layout-column flex">
+            <!-- ngIf: !$ctrl.userData -->
+            <div flex="grow" layout="row" layout-align="start stretch" class="flex-fill layout-align-start-stretch layout-row flex-grow">
+                <md-sidenav id="sidebar" hide-print="" md-component-id="menu" md-is-locked-open="$mdMedia('gt-sm')" md-whiteframe="4" md-theme="mbBroker-dark"
+                    class="site-sitenav md-sidenav-left hide-print md-closed ng-isolate-scope _md md-mbBroker-dark-theme md-whiteframe-4dp md-locked-open"
+                    tabindex="-1">
+                    <!-- ngIf: $ctrl.userData && $ctrl.userOptions -->
+                    <main-sidebar user-data="$ctrl.userData" user-options="$ctrl.userOptions" on-open-prospect-modal="$ctrl.openProspectModal(ev, dealStage)"
+                        on-close-menu="$ctrl.closeMenu()" data-ng-if="$ctrl.userData &amp;&amp; $ctrl.userOptions" class="ng-scope ng-isolate-scope"
+                        style="">
+                        <md-content md-scroll-y="" class="sidebar-content _md md-mbBroker-dark-theme">
+                            <div class="nav-group">
+                                <div class="nav-top">
+                                    <a class="nav-logo md-mbBroker-dark-theme" data-ui-sref="app.dashboard" href="/dashboard">
+                                        <img src="/assets/images/deal-iq-logo-on-black.svg" alt="Logo" class="nav-logo__img">
+                                    </a>
+                                    <md-menu md-theme="mbBroker" md-offset="0 50" class="nav-new-button md-menu ng-scope _md">
+                                        <button class="md-primary md-raised md-button--icon-right mg0 md-button md-mbBroker-theme md-ink-ripple" type="button" ng-transclude=""
+                                            data-e2e="add-new-button" data-ng-click="$mdOpenMenu($event)" aria-haspopup="true"
+                                            aria-expanded="false" aria-owns="menu_container_0">
+                                            <span class="ng-scope">New</span>
+                                            <md-icon md-font-icon="icon-sort-desc" class="md-icon--sm ng-scope md-mbBroker-theme md-font material-icons icon-sort-desc"
+                                                aria-hidden="true"></md-icon>
+                                        </button>
+                                        <div class="_md md-open-menu-container md-whiteframe-z2" id="menu_container_0" style="display: none;" aria-hidden="true">
+                                            <md-menu-content class="pointer-arrow pointer-arrow--up" role="menu">
+                                                <md-menu-item>
+                                                    <button class="md-button md-mbBroker-theme md-ink-ripple" type="button" ng-transclude="" data-e2e="add-prospect-button" data-ng-click="$ctrl.openProspectModal('prospect')"
+                                                        role="menuitem">Prospecting</button>
+                                                </md-menu-item>
+                                                <md-menu-item>
+                                                    <button class="md-button md-mbBroker-theme md-ink-ripple" type="button" ng-transclude="" data-e2e="add-executing-button"
+                                                        data-ng-click="$ctrl.openProspectModal('executing')" role="menuitem">Executing</button>
+                                                </md-menu-item>
+                                                <md-menu-item>
+                                                    <button class="md-button md-mbBroker-theme md-ink-ripple" type="button" ng-transclude="" data-ng-click="$ctrl.openTasksModal()"
+                                                        role="menuitem">Task</button>
+                                                </md-menu-item>
+                                                <!-- ngIf: $ctrl.userOptions.feature_flags.personal_contacts_feature_flag -->
+                                            </md-menu-content>
+                                        </div>
+                                    </md-menu>
+                                    <md-list role="list" class="md-mbBroker-dark-theme">
+                                        <md-list-item data-ui-sref-active="active active--green" role="listitem" class="_md-button-wrap _md md-clickable" tabindex="-1"
+                                            href="/dashboard">
+                                            <div class="md-button md-no-style">
+                                                <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" ng-transclude="" aria-label="Dashboard" data-ng-click="$ctrl.closeMenu()"
+                                                    data-ui-sref="app.dashboard" href="/dashboard">
+                                                    <div class="md-ripple-container" style=""></div>
+                                                </a>
+                                                <div class="md-list-item-inner">Screening</div>
+                                                <div class="md-secondary-container"></div>
+                                            </div>
+                                        </md-list-item>
+                                        <md-list-item data-ui-sref-active="active active--green" role="listitem" class="_md-button-wrap _md md-clickable" tabindex="-1"
+                                            href="/dashboard">
+                                            <div class="md-button md-no-style">
+                                                <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" ng-transclude="" aria-label="Dashboard" data-ng-click="$ctrl.closeMenu()"
+                                                    data-ui-sref="app.dashboard" href="/dashboard">
+                                                    <div class="md-ripple-container" style=""></div>
+                                                </a>
+                                                <div class="md-list-item-inner">Applications</div>
+                                                <div class="md-secondary-container"></div>
+                                            </div>
+                                        </md-list-item>
+                                        <md-list-item data-e2e="executing-deals-route-btn" data-ng-class="{'active active--blue': $ctrl.dealLifeCycleStage === 'executing'}"
+                                            role="listitem" class="_md-button-wrap _md md-clickable active active--green" tabindex="-1"
+                                            href="/deals/executing" style="">
+                                            <div class="md-button md-no-style">
+                                                <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" ng-transclude="" aria-label="Executing&nbsp;(1)" data-ng-click="$ctrl.closeMenu()"
+                                                    data-ui-sref="app.deals.executing" href="/deals/executing">
+                                                    <div class="md-ripple-container" style=""></div>
+                                                </a>
+                                                <div class="md-list-item-inner">
+                                                    <span>Committed</span>
+                                                    <!-- ngIf: $ctrl.executing -->
+                                                    <span data-ng-if="$ctrl.executing" class="ng-binding ng-scope" style="">&nbsp;(3)</span>
+                                                    <!-- end ngIf: $ctrl.executing -->
+                                                </div>
+                                                <div class="md-secondary-container"></div>
+                                            </div>
+                                        </md-list-item>
+                                        <md-list-item data-ui-sref-active="active active--green" role="listitem" class="_md-button-wrap _md md-clickable" tabindex="-1"
+                                            href="/dashboard">
+                                            <div class="md-button md-no-style">
+                                                <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" ng-transclude="" aria-label="Dashboard" data-ng-click="$ctrl.closeMenu()"
+                                                    data-ui-sref="app.dashboard" href="/dashboard">
+                                                    <div class="md-ripple-container" style=""></div>
+                                                </a>
+                                                <div class="md-list-item-inner">Closed by Production</div>
+                                                <div class="md-secondary-container"></div>
+                                            </div>
+                                        </md-list-item>
+                                        <md-list-item data-ui-sref-active="active active--green" role="listitem" class="_md-button-wrap _md md-clickable" tabindex="-1"
+                                            href="/dashboard">
+                                            <div class="md-button md-no-style">
+                                                <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" ng-transclude="" aria-label="Dashboard" data-ng-click="$ctrl.closeMenu()"
+                                                    data-ui-sref="app.dashboard" href="/dashboard">
+                                                    <div class="md-ripple-container" style=""></div>
+                                                </a>
+                                                <div class="md-list-item-inner">Closed (Booked)</div>
+                                                <div class="md-secondary-container"></div>
+                                            </div>
+                                        </md-list-item>
+                                        <md-divider class="mt2 mb2 md-mbBroker-dark-theme"></md-divider>
+                                        <md-list-item data-e2e="tasks-route-btn" data-ui-sref-active="active active--green" role="listitem" class="_md-button-wrap _md md-clickable"
+                                            tabindex="-1" href="/tasks">
+                                            <div class="md-button md-no-style">
+                                                <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" ng-transclude="" aria-label="Tasks" data-ng-click="$ctrl.closeMenu()"
+                                                    data-ui-sref="app.tasks" href="/tasks"></a>
+                                                <div class="md-list-item-inner">Tasks</div>
+                                                <div class="md-secondary-container"></div>
+                                            </div>
+                                        </md-list-item>
+                                        <!-- ngIf: $ctrl.userOptions.feature_flags.commissions_chart_feature_flag -->
+                                        <md-list-item data-e2e="commissions-route-btn" data-ui-sref-active="active active--green" role="listitem" class="_md-button-wrap ng-scope _md"
+                                            tabindex="-1" href="/commissions/overview" style="">
+                                            <div class="md-button md-no-style">
+                                                <!-- ngIf: $ctrl.userOptions.feature_flags.commissions_chart_feature_flag -->
+                                                <a class="md-no-style md-button ng-scope md-mbBroker-dark-theme md-ink-ripple" ng-transclude="" aria-label="Commissions"
+                                                    data-ng-if="$ctrl.userOptions.feature_flags.commissions_chart_feature_flag"
+                                                    data-ng-click="$ctrl.closeMenu()" data-ui-sref="app.commissionsOverview"
+                                                    href="/commissions/overview"></a>
+                                                <!-- end ngIf: $ctrl.userOptions.feature_flags.commissions_chart_feature_flag -->
+                                                <div class="md-list-item-inner">Commissions</div>
+                                                <div class="md-secondary-container"></div>
+                                            </div>
+                                        </md-list-item>
+                                        <!-- end ngIf: $ctrl.userOptions.feature_flags.commissions_chart_feature_flag -->
+                                        <!-- ngIf: $ctrl.userOptions.feature_flags.personal_contacts_feature_flag -->
+                                    </md-list>
+                                </div>
+                                <div class="nav-bottom">
+                                    <div class="full-width">
+                                        <md-list role="list" class="md-mbBroker-dark-theme">
+                                            <md-list-item data-e2e="support-route-btn" data-ng-class="{'active active--lime': $ctrl.state.includes('app.support')}" role="listitem"
+                                                class="_md-button-wrap _md md-clickable" tabindex="-1" href="/support/overview">
+                                                <div class="md-button md-no-style">
+                                                    <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" ng-transclude="" aria-label="Support" data-ng-click="$ctrl.closeMenu()"
+                                                        data-ui-sref="app.support.overview" href="/support/overview"></a>
+                                                    <div class="md-list-item-inner">Support</div>
+                                                    <div class="md-secondary-container"></div>
+                                                </div>
+                                            </md-list-item>
+                                        </md-list>
+                                    </div>
+                                </div>
+                            </div>
+                        </md-content>
+                    </main-sidebar>
+                    <!-- end ngIf: $ctrl.userData && $ctrl.userOptions -->
+                </md-sidenav>
+                <div tabindex="-1" role="main" flex="" layout="column" class="layout-column flex">
+                    <!-- ngIf: $ctrl.userData && $ctrl.userOptions -->
+                    <main-header id="header" user-data="$ctrl.userData" on-open-menu="$ctrl.openMenu()" on-open-prospect-modal="$ctrl.openProspectModal(ev, dealStage)"
+                        data-ng-if="$ctrl.userData &amp;&amp; $ctrl.userOptions" class="ng-scope ng-isolate-scope" style="">
+                        <div layout="row" layout-align="center center" class="layout-align-center-center layout-row">
+                            <md-toolbar md-theme="mbBroker-dark" class="site-content-toolbar _md md-mbBroker-dark-theme _md-toolbar-transitions">
+                                <div layout="row" class="container layout-row">
+                                    <div flex="" layout="row" layout-align="start stretch" class="layout-align-start-stretch layout-row flex">
+                                        <div hide-gt-sm="" class="hide-gt-sm">
+                                            <button class="md-icon-button md-button md-mbBroker-dark-theme md-ink-ripple" type="button" ng-transclude="" data-ng-click="$ctrl.openMenu()">
+                                                <md-icon md-font-icon="icon-menu" class="md-icon--md ng-scope md-mbBroker-dark-theme md-font material-icons icon-menu" aria-label="icon-menu"
+                                                    role="img"></md-icon>
+                                            </button>
+                                        </div>
+                                        <global-search class="ng-isolate-scope">
+                                            <div class="header-search">
+                                                <div layout="row" layout-align="start center" class="layout-align-start-center layout-row">
+                                                    <div class="relative">
+                                                        <input type="text" id="search-input" name="search-input" placeholder="Search" class="header-search__input ng-pristine ng-untouched ng-valid ng-empty"
+                                                            data-ng-model="$ctrl.searchText" data-ng-change="$ctrl.checkShowResults()"
+                                                            data-ng-class="{'input-focused': $ctrl.focused || $ctrl.showingResults }"
+                                                            data-ng-focus="$ctrl.focused = true; $ctrl.checkShowResults()" data-ng-blur="$ctrl.focused = false"
+                                                            data-ng-click="$ctrl.stoppingPropagation($event)" aria-invalid="false"
+                                                            style="">
+                                                        <div class="header-search__icon" data-ng-class="{'icon-focused': $ctrl.focused || $ctrl.showingResults}">
+                                                            <!-- ngIf: $ctrl.searchText.length <= 0 -->
+                                                            <md-icon md-font-icon="icon-magnifier" class="md-icon--md ng-scope md-mbBroker-dark-theme md-font material-icons icon-magnifier"
+                                                                data-ng-if="$ctrl.searchText.length <= 0" aria-label="icon-magnifier"
+                                                                role="img" style=""></md-icon>
+                                                            <!-- end ngIf: $ctrl.searchText.length <= 0 -->
+                                                            <!-- ngIf: $ctrl.searchText.length > 0 -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ngIf: $ctrl.showingResults -->
+                                            </div>
+                                        </global-search>
+                                    </div>
+                                    <div flex="nogrow" layout="row" layout-align="end center" class="layout-align-end-center layout-row flex-nogrow">
+                                        <div class="relative">
+                                            <button class="md-icon-button md-button md-mbBroker-dark-theme md-ink-ripple" type="button" ng-transclude="" id="alert-icon"
+                                                aria-label="Alerts" data-ng-click="$ctrl.openAlerts()">
+                                                <md-icon md-font-icon="icon-alarm" class="md-icon--md ng-scope md-mbBroker-dark-theme md-font material-icons icon-alarm"
+                                                    aria-hidden="true"></md-icon>
+                                                <!-- ngIf: $ctrl.alertsCount > 0 -->
+                                            </button>
+                                        </div>
+                                        <div hide-xs="" class="mr1 hide-xs"></div>
+                                        <button class="md-icon-button md-button md-mbBroker-dark-theme md-ink-ripple" type="button" ng-transclude="" id="IntercomSupport"
+                                            aria-label="Feedback" data-ng-click="$ctrl.feedbackClicked()">
+                                            <md-icon md-font-icon="icon-chat-help" class="md-icon--md ng-scope md-mbBroker-dark-theme md-font material-icons icon-chat-help"
+                                                aria-hidden="true"></md-icon>
+                                        </button>
+                                        <div hide-xs="" class="mr1 hide-xs"></div>
+                                        <a data-e2e="profile-route-btn" class="avatar avatar--md ml-half md-mbBroker-dark-theme" data-ui-sref="app.profile" href="/profile">
+                                            <div class="avatar-photo" data-ng-style="{ 'background-image' : 'url(' + $ctrl.userData.avatar + ')' }" style="background-image: url(&quot;null&quot;);"></div>
+                                            <!-- ngIf: !$ctrl.userData.avatar -->
+                                            <div class="avatar-initial ng-binding ng-scope" data-ng-if="!$ctrl.userData.avatar" style="">JL</div>
+                                            <!-- end ngIf: !$ctrl.userData.avatar -->
+                                        </a>
+                                        <div class="mr1"></div>
+                                    </div>
+                                </div>
+                            </md-toolbar>
+                        </div>
+                        <alerts-panel is-global="true" class="ng-isolate-scope">
+                            <!-- ngIf: !$ctrl.isGlobal -->
+                        </alerts-panel>
+                    </main-header>
+                    <!-- end ngIf: $ctrl.userData && $ctrl.userOptions -->
+                    <!-- ngIf: $ctrl.userData && $ctrl.userOptions -->
+                    <md-content id="main-content" flex="" md-scroll-y="" layout="column" data-ng-if="$ctrl.userData &amp;&amp; $ctrl.userOptions"
+                        class="ng-scope _md md-mbBroker-theme layout-column flex" style="">
+                        <!-- uiView: -->
+                        <div class="content ng-scope" data-ui-view="" style="">
+                            <deals-detail deal-resolve="::$resolve.dealResolve" class="ng-scope ng-isolate-scope">
+                                <div class="container page-header">
+                                    <md-content data-e2e="dealDetailsHeader" class="md-whiteframe-z1 md-whiteframe--header md-whiteframe--header--snap-bottom _md md-mbBroker-theme md-whiteframe--header--blue"
+                                        data-ng-class="{'archived': $ctrl.deal.is_archived, 'md-whiteframe--header--purple': $ctrl.deal.deal_life_cycle_stage === 'prospect', 'md-whiteframe--header--blue': $ctrl.deal.deal_life_cycle_stage === 'executing', 'md-whiteframe--header--lime': $ctrl.deal.deal_life_cycle_stage === 'closed'}">
+                                        <div layout="column" layout-gt-sm="row" layout-align="start stretch" class="ng-animate-disabled layout-gt-sm-row layout-align-start-stretch layout-column">
+                                            <div flex="" layout-align="start stretch" layout-gt-md="row" class="layout-gt-md-row layout-align-start-stretch flex">
+                                                <div>
+                                                    <h1 class="ng-animate-disabled" data-ng-hide="$ctrl.editMode" aria-hidden="false">
+                                                        <span data-e2e="deal-detail-name" class="editable-area ng-binding" data-ng-click="$ctrl.editModeToggle(true)" data-ng-class="{ 'unclickable': $ctrl.deal.deal_life_cycle_stage === 'closed' }"
+                                                            role="button" tabindex="0">Expedia Downtown Office Deal
+                                                            <favorite-star is-favorite="$ctrl.deal.is_favorite" on-un-favorite="$ctrl.unFavoriteDeal()" on-favorite="$ctrl.favoriteDeal()"
+                                                                class="ng-isolate-scope">
+                                                                <!-- ngIf: $ctrl.isFavorite -->
+                                                                <!-- ngIf: !$ctrl.isFavorite -->
+                                                                <button class="md-icon-button md-button ng-scope md-mbBroker-theme md-ink-ripple" type="button" ng-transclude="" data-ng-click="$ctrl.favorite($event)"
+                                                                    data-ng-if="!$ctrl.isFavorite">
+                                                                    <md-icon md-font-icon="icon-star-outline" class="md-icon--md ng-scope md-mbBroker-theme md-font material-icons icon-star-outline"
+                                                                        aria-label="icon-star-outline" role="img"></md-icon>
+                                                                </button>
+                                                                <!-- end ngIf: !$ctrl.isFavorite -->
+                                                            </favorite-star>
+                                                        </span>
+                                                        <!-- ngIf: $ctrl.deal.user_wants_salesforce_export -->
+                                                    </h1>
+                                                    <p class="editable-area color-secondary ng-animate-disabled" data-ng-hide="$ctrl.editMode" data-ng-click="$ctrl.editModeToggle(true)"
+                                                        data-ng-class="{ 'unclickable': $ctrl.deal.deal_life_cycle_stage === 'closed' }"
+                                                        role="button" tabindex="0" aria-hidden="false">
+                                                        <!-- ngIf: $ctrl.deal.client -->
+                                                        <span data-e2e="deal-detail-client" class="editable-area__field ng-binding ng-scope" data-ng-if="$ctrl.deal.client">Deal for Johnny Appleseed</span>
+                                                        <!-- end ngIf: $ctrl.deal.client -->
+                                                    </p>
+                                                    <!-- ngIf: $ctrl.deal.deal_life_cycle_stage === 'closed' -->
+                                                    <permissions deal="$ctrl.deal" members="$ctrl.members" class="ng-animate-disabled ng-isolate-scope" data-ng-hide="$ctrl.editMode"
+                                                        aria-hidden="false">
+                                                        <div layout="row" layout-align="start start" class="layout-align-start-start layout-row">
+                                                            <!-- ngRepeat: member in $ctrl.combinedMembers -->
+                                                            <div class="avatar avatar--md ng-scope" data-ng-repeat="member in $ctrl.combinedMembers" data-ng-click="$ctrl.manageTeams()"
+                                                                role="button" tabindex="0" aria-label="Edit CBRE Member" style="">
+                                                                <!-- ngIf: $ctrl.deal.deal_life_cycle_stage === 'prospect' || $ctrl.deal.deal_life_cycle_stage === 'executing' -->
+                                                                <!-- end ngIf: $ctrl.deal.deal_life_cycle_stage === 'prospect' || $ctrl.deal.deal_life_cycle_stage === 'executing' -->
+                                                                <!-- ngIf: $ctrl.deal.deal_life_cycle_stage === 'closed' -->
+                                                                <div class="avatar-photo" data-ng-style="{ 'background-image' : 'url(' + member.user.avatar + ')' }" style="background-image: url(&quot;null&quot;);"></div>
+                                                                <!-- ngIf: !member.user.avatar -->
+                                                                <div class="avatar-initial ng-binding ng-scope" data-ng-if="!member.user.avatar">JL</div>
+                                                                <!-- end ngIf: !member.user.avatar -->
+                                                            </div>
+                                                            <!-- end ngRepeat: member in $ctrl.combinedMembers -->
+                                                            <div layout="row" layout-align="center center" class="avatar-icon avatar-icon--md layout-align-center-center layout-row"
+                                                                data-ng-click="$ctrl.manageTeams()" data-ng-hide="ctrl.manageTeams || $ctrl.deal.deal_life_cycle_stage === 'closed'"
+                                                                aria-label="Add CBRE Member" role="button" tabindex="0" aria-hidden="false">
+                                                                <md-icon md-font-icon="icon-plus" class="md-icon--xxs md-mbBroker-theme md-font material-icons icon-plus" aria-hidden="true"></md-icon>
+                                                            </div>
+                                                        </div>
+                                                    </permissions>
+                                                    <form class="ng-animate-disabled mb1 ng-pristine ng-hide ng-valid-minlength ng-valid-maxlength ng-valid ng-valid-required"
+                                                        data-ng-show="$ctrl.editMode" data-ng-submit="$ctrl.saveDeal()" aria-hidden="true">
+                                                        <label for="deal-name">Deal Name</label>
+                                                        <input type="text" id="deal-name" name="deal-name" data-e2e="edit-deal-name-input" data-ng-model="$ctrl.newDealName" class="ng-pristine ng-untouched ng-valid ng-empty"
+                                                            aria-invalid="false">
+                                                        <md-autocomplete data-e2e="edit-deal-company-input" flex="" required="" placeholder="Search by company or client name" md-no-cache="$ctrl.noCache"
+                                                            md-search-text="$ctrl.searchText" md-selected-item-change="$ctrl.selectedClientChange($ctrl.selectedClient)"
+                                                            md-items="client in $ctrl.querySearch($ctrl.searchText)" md-item-text="client.name"
+                                                            md-selected-item="$ctrl.selectedClient" md-min-length="1" md-menu-class="autocomplete-custom-template"
+                                                            md-floating-label="Company / Client" data-ng-disabled="$ctrl.isDisabled"
+                                                            data-ng-blur="$ctrl.checkSelected($ctrl.selectedClient)" md-has-not-found="true"
+                                                            tabindex="-1" class="ng-isolate-scope md-mbBroker-theme flex" aria-disabled="false">
+                                                            <md-autocomplete-wrap ng-class="{ 'md-whiteframe-z1': !floatingLabel, 'md-menu-showing': !$mdAutocompleteCtrl.hidden }">
+                                                                <!-- ngIf: floatingLabel -->
+                                                                <md-input-container ng-if="floatingLabel" class="ng-scope md-mbBroker-theme md-input-has-value">
+                                                                    <label class="ng-binding md-required" for="{{ inputId || 'fl-input-' + $mdAutocompleteCtrl.id }}">Company / Client</label>
+                                                                    <input type="search" id="fl-input-11" name="" autocomplete="off" ng-required="$mdAutocompleteCtrl.isRequired" ng-readonly="$mdAutocompleteCtrl.isReadonly"
+                                                                        ng-disabled="$mdAutocompleteCtrl.isDisabled" ng-model="$mdAutocompleteCtrl.scope.searchText"
+                                                                        ng-model-options="{ allowInvalid: true }" ng-keydown="$mdAutocompleteCtrl.keydown($event)"
+                                                                        ng-blur="$mdAutocompleteCtrl.blur($event)" ng-focus="$mdAutocompleteCtrl.focus($event)"
+                                                                        aria-owns="ul-11" aria-label="Company / Client" aria-autocomplete="list"
+                                                                        role="combobox" aria-haspopup="true" aria-activedescendant=""
+                                                                        aria-expanded="false" class="ng-pristine ng-untouched md-input ng-valid-minlength ng-valid-maxlength ng-not-empty ng-valid ng-valid-required"
+                                                                        required="required" aria-invalid="false">
+                                                                    <div class="md-errors-spacer"></div>
+                                                                    <!-- mdAutocompleteParentScope: -->
+                                                                    <div md-autocomplete-parent-scope="" md-autocomplete-replace="" class="ng-scope"></div>
+                                                                </md-input-container>
+                                                                <!-- end ngIf: floatingLabel -->
+                                                                <!-- ngIf: $mdAutocompleteCtrl.loadingIsVisible() -->
+                                                            </md-autocomplete-wrap>
+                                                            <aria-status class="md-visually-hidden" role="status" aria-live="assertive">
+                                                                <!-- ngRepeat: message in $mdAutocompleteCtrl.messages track by $index -->
+                                                            </aria-status>
+                                                        </md-autocomplete>
+                                                        <!-- ngIf: $ctrl.warnings.clientMissing === true -->
+                                                        <div class="controls">
+                                                            <button class="secondary-button" data-ng-click="$ctrl.editModeToggle(false)">Cancel</button>
+                                                            <button data-e2e="edit-deal-confirm-button" type="submit">Save</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div flex="" class="flex">
+                                                    <div layout="row" layout-align="end center" data-ng-hide="$ctrl.editMode" class="layout-align-end-center layout-row" aria-hidden="false">
+                                                        <div class="ml1">
+                                                            <button class="md-button--skeleton md-button md-mbBroker-theme md-ink-ripple" type="button" style="background: #D7D7D7; border: none;">
+                                                                <span>RETURN TO DEAL</span>
+                                                            </button>
+                                                        </div>
+                                                        <!-- ngIf: $ctrl.userOptions.feature_flags.vouchers_feature_flag -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <md-nav-bar md-selected-nav-item="$ctrl.activeNav" aria-label="Deal Detail Menu" class="deal-detail-nav-bar mt1 ng-isolate-scope md-mbBroker-theme">
+                                            <div class="md-nav-bar">
+                                                <nav role="navigation">
+                                                    <ul class="_md-nav-bar-list" ng-transclude="" role="listbox" tabindex="0" ng-focus="ctrl.onFocus()" ng-blur="ctrl.onBlur()"
+                                                        ng-keydown="ctrl.onKeydown($event)" aria-label="">
+                                                        <div class="main-nav-tabs ng-scope">
+                                                            <li class="md-nav-item ng-isolate-scope" role="option" aria-selected="true" md-nav-sref="app.dealsDetail.overview" name="app.dealsDetail.overview">
+                                                                <!-- ngIf: ctrl.mdNavSref -->
+                                                                <a class="_md-nav-button md-accent md-button ng-scope md-mbBroker-theme md-ink-ripple md-unselected" ng-transclude="" ng-if="ctrl.mdNavSref"
+                                                                    ng-class="ctrl.getNgClassMap()" tabindex="-1" ui-sref="app.dealsDetail.overview"
+                                                                    href="/deals/detail/373254/overview" style="">
+                                                                    <span ng-transclude="" class="_md-nav-button-text ng-scope">1. GETTING STARTED</span>
+                                                                </a>
+                                                                <!-- end ngIf: ctrl.mdNavSref -->
+                                                                <!-- ngIf: ctrl.mdNavHref -->
+                                                                <!-- ngIf: ctrl.mdNavClick -->
+                                                            </li>
+                                                            <!-- ngIf: $ctrl.activeTabs['notes'] -->
+                                                            <li class="md-nav-item ng-scope ng-isolate-scope" role="option" aria-selected="false" md-nav-sref="app.dealsDetail.notes"
+                                                                name="app.dealsDetail.notes" data-e2e="deal-detail-nav-notes"
+                                                                data-ng-if="$ctrl.activeTabs['notes']">
+                                                                <!-- ngIf: ctrl.mdNavSref -->
+                                                                <a class="_md-nav-button md-accent md-button ng-scope md-mbBroker-theme md-ink-ripple md-active md-primary" ng-transclude=""
+                                                                    ng-if="ctrl.mdNavSref" ng-class="ctrl.getNgClassMap()" tabindex="-1"
+                                                                    ui-sref="app.dealsDetail.notes" href="/deals/detail/373254/notes">
+                                                                    <span ng-transclude="" class="_md-nav-button-text ng-scope">2. PROPERTY DETAILS</span>
+                                                                </a>
+                                                                <!-- end ngIf: ctrl.mdNavSref -->
+                                                                <!-- ngIf: ctrl.mdNavHref -->
+                                                                <!-- ngIf: ctrl.mdNavClick -->
+                                                            </li>
+                                                            <!-- end ngIf: $ctrl.activeTabs['notes'] -->
+                                                            <!-- ngIf: $ctrl.activeTabs['tasks'] -->
+                                                            <li class="md-nav-item ng-scope ng-isolate-scope" role="option" aria-selected="false" md-nav-sref="app.dealsDetail.tasks"
+                                                                name="app.dealsDetail.tasks" data-e2e="deal-detail-nav-tasks"
+                                                                data-ng-if="$ctrl.activeTabs['tasks']">
+                                                                <!-- ngIf: ctrl.mdNavSref -->
+                                                                <a class="_md-nav-button md-accent md-button ng-scope md-mbBroker-theme md-ink-ripple md-unselected" ng-transclude="" ng-if="ctrl.mdNavSref"
+                                                                    ng-class="ctrl.getNgClassMap()" tabindex="-1" ui-sref="app.dealsDetail.tasks"
+                                                                    href="/deals/detail/373254/tasks">
+                                                                    <span ng-transclude="" class="_md-nav-button-text ng-scope">3. FINANCIALS</span>
+                                                                </a>
+                                                                <!-- end ngIf: ctrl.mdNavSref -->
+                                                                <!-- ngIf: ctrl.mdNavHref -->
+                                                                <!-- ngIf: ctrl.mdNavClick -->
+                                                            </li>
+                                                            <!-- end ngIf: $ctrl.activeTabs['tasks'] -->
+                                                            <!-- ngIf: $ctrl.activeTabs['attachments'] -->
+                                                            <li class="md-nav-item ng-scope ng-isolate-scope" role="option" aria-selected="false" md-nav-sref="app.dealsDetail.attachments"
+                                                                name="app.dealsDetail.attachments" data-ng-if="$ctrl.activeTabs['attachments']">
+                                                                <!-- ngIf: ctrl.mdNavSref -->
+                                                                <a class="_md-nav-button md-accent md-button ng-scope md-mbBroker-theme md-ink-ripple md-unselected" ng-transclude="" ng-if="ctrl.mdNavSref"
+                                                                    ng-class="ctrl.getNgClassMap()" tabindex="-1" ui-sref="app.dealsDetail.attachments"
+                                                                    href="/deals/detail/373254/files">
+                                                                    <span ng-transclude="" class="_md-nav-button-text ng-scope">4. REVIEW &AMP; SUBMIT</span>
+                                                                </a>
+                                                                <!-- end ngIf: ctrl.mdNavSref -->
+                                                                <!-- ngIf: ctrl.mdNavHref -->
+                                                                <!-- ngIf: ctrl.mdNavClick -->
+                                                            </li>
+                                                        </div>
+                                                        <div class="commissions-nav-tab ng-scope">
+                                                            <!-- ngIf: $ctrl.activeTabs['financials'] && $ctrl.deal.deal_life_cycle_stage === 'closed' && $ctrl.userOptions.feature_flags.deal_financials_feature_flag -->
+                                                        </div>
+                                                    </ul>
+                                                </nav>
+                                                <md-nav-ink-bar class="_md-right" style="left: 160px; width: 150px;"></md-nav-ink-bar>
+                                            </div>
+                                        </md-nav-bar>
+                                    </md-content>
+                                </div>
+                                <div class="container">
+                                    
+                                    <!-- uiView: -->
+                                    <div data-ui-view="" class="ng-scope">
+                                        <deals-detail-overview deal-resolve="::$resolve.dealResolve" class="ng-scope ng-isolate-scope">
+                                            <div class="detail-cards">
+                                                <div class="primary" style="width: 100%;">
+                                                    <md-card class="_md md-mbBroker-theme">
+                                                        <deal-panel-tasks deal="$ctrl.deal" count="5" see-all-link="true" class="ng-isolate-scope">
+                                                            <md-card-content>
+                                                                <h1>What are the Property Details?</h1>
+                                                                <div layout="row" layout-align="center center" class="layout-align-center-center layout-row">
+                                                                    <h2>Property Overview</h2>
+                                                                    <span flex="" class="flex"></span>
+                                                                </div>
+                                                                <div>
+                                                                    <label>* Property Expiration Date</label>
+                                                                    <div class="input-button">
+                                                                        <md-datepicker md-hide-icons="all" md-placeholder="M/D/YYYY" md-current-view="month" md-min-date="$ctrl.minDate" md-max-date="$ctrl.maxDate"
+                                                                            md-is-open="$ctrl.openReminderDateDialog" data-ng-model="$ctrl.taskClone.alert_datetime"
+                                                                            data-ng-change="$ctrl.dateChange()" class="ng-pristine ng-valid ng-isolate-scope md-mbBroker-theme ng-valid-mindate ng-valid-maxdate ng-valid-filtered ng-valid-valid ng-empty ng-touched"
+                                                                            tabindex="-1" type="date" aria-invalid="false" style="">
+                                                                            <div class="md-datepicker-input-container" ng-class="{'md-datepicker-focused': ctrl.isFocused}" style="">
+                                                                                <input aria-label="M/D/YYYY" class="md-datepicker-input" aria-haspopup="true" ng-focus="ctrl.setFocused(true)" ng-blur="ctrl.setFocused(false)"
+                                                                                    size="3" placeholder="M/D/YYYY"> </div>
+                                                                            <div class="md-datepicker-calendar-pane md-whiteframe-z1 md-mbBroker-theme" id="md-date-pane105">
+                                                                                <div class="md-datepicker-input-mask">
+                                                                                    <div class="md-datepicker-input-mask-opaque"></div>
+                                                                                </div>
+                                                                                <div class="md-datepicker-calendar">
+                                                                                    <!-- ngIf: ctrl.isCalendarOpen -->
+                                                                                </div>
+                                                                            </div>
+                                                                        </md-datepicker>
+                                                                        <button type="button" class="calendar" data-ng-click="$ctrl.openReminderDateDialog = true">Open Calendar</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <label>* Property Agreement Type</label>
+                                                                    <md-select placeholder="Select" class="ng-valid md-mbBroker-theme ng-empty ng-dirty ng-touched" tabindex="0" aria-label="Select"
+                                                                        aria-disabled="false" role="listbox" aria-expanded="false"
+                                                                        aria-multiselectable="false" id="select_110" aria-owns="select_container_111"
+                                                                        aria-invalid="false" style="">
+                                                                        <md-select-value class="md-select-value md-select-placeholder" id="select_value_label_107">
+                                                                            <span>Select</span>
+                                                                            <span class="md-select-icon" aria-hidden="true"></span>
+                                                                        </md-select-value>
+                                                                    </md-select>
+                                                                </div>
+                                                                <div>
+                                                                    <label>* Property Transaction Type</label>
+                                                                    <md-select placeholder="Select" class="ng-valid md-mbBroker-theme ng-empty ng-dirty ng-touched" tabindex="0" aria-label="Select"
+                                                                        aria-disabled="false" role="listbox" aria-expanded="false"
+                                                                        aria-multiselectable="false" id="select_110" aria-owns="select_container_111"
+                                                                        aria-invalid="false" style="">
+                                                                        <md-select-value class="md-select-value md-select-placeholder" id="select_value_label_107">
+                                                                            <span>Select</span>
+                                                                            <span class="md-select-icon" aria-hidden="true"></span>
+                                                                        </md-select-value>
+                                                                    </md-select>
+                                                                </div>
+                                                                <div layout="row" layout-align="center center" class="layout-align-center-center layout-row">
+                                                                    <h2>Tenant's Prior Location</h2>
+                                                                    <span flex="" class="flex"></span>
+                                                                </div>
+                                                                <div>
+                                                                    <label>Building Name</label>
+                                                                    <input type="text">
+                                                                </div>
+                                                                <div>
+                                                                    <label>* Address Line 1</label>
+                                                                    <input type="text">
+                                                                </div>
+                                                                <div>
+                                                                    <label>Address Line 2</label>
+                                                                    <input type="text">
+                                                                </div>
+                                                                <div>
+                                                                    <label>* City</label>
+                                                                    <input type="text">
+                                                                </div>
+                                                                <div>
+                                                                    <label>* State</label>
+                                                                    <md-select placeholder="Select" class="md-mbBroker-theme">
+                                                                        <md-select-value class="md-select-value md-select-placeholder">
+                                                                            <span>Select</span>
+                                                                            <span class="md-select-icon"></span>
+                                                                        </md-select-value>
+                                                                    </md-select>
+                                                                </div>
+                                                                <div>
+                                                                    <label>* ZIP</label>
+                                                                    <input type="text">
+                                                                </div>
+                                                                <div>
+                                                                    <label>* Square Feet</label>
+                                                                    <input type="text">
+                                                                </div>
+                                                                <div>
+                                                                    <label># of Tenants</label>
+                                                                    <input type="text">
+                                                                </div>
+                                                                <button data-e2e="create-task-button" class="add ng-animate-disabled" data-ng-click="$ctrl.addTaskMode = true">Add Property</button>
+                                                                <div layout="row" layout-align="center center" class="layout-align-center-center layout-row">
+                                                                    <h2>Details</h2>
+                                                                    <span flex="" class="flex"></span>
+                                                                </div>
+                                                                <div>
+                                                                    <p>Is this property active?</p>
+                                                                    <md-radio-group class="md-primary task-privacy _md md-mbBroker-theme">
+                                                                        <md-radio-button class="md-primary md-mbBroker-theme md-checked" role="radio" value="true">
+                                                                            <div class="md-container md-ink-ripple" md-ink-ripple="" md-ink-ripple-checkbox="">
+                                                                                <div class="md-off"></div>
+                                                                                <div class="md-on"></div>
+                                                                            </div>
+                                                                            <div ng-transclude="" class="md-label">No</div>
+                                                                        </md-radio-button>
+                                                                        <md-radio-button class="md-primary md-mbBroker-theme" data-ng-value="false" id="radio_124" role="radio" aria-checked="false"
+                                                                            aria-label="Team" value="false">
+                                                                            <div class="md-container md-ink-ripple" md-ink-ripple="" md-ink-ripple-checkbox="">
+                                                                                <div class="md-off"></div>
+                                                                                <div class="md-on"></div>
+                                                                            </div>
+                                                                            <div ng-transclude="" class="md-label">Yes</div>
+                                                                        </md-radio-button>
+                                                                    </md-radio-group>
+                                                                </div>
+                                                                <div>
+                                                                    <p>Was a percentage of revenue paid as rent?</p>
+                                                                    <md-radio-group class="md-primary task-privacy _md md-mbBroker-theme">
+                                                                        <md-radio-button class="md-primary md-mbBroker-theme md-checked" role="radio" value="true">
+                                                                            <div class="md-container md-ink-ripple" md-ink-ripple="" md-ink-ripple-checkbox="">
+                                                                                <div class="md-off"></div>
+                                                                                <div class="md-on"></div>
+                                                                            </div>
+                                                                            <div ng-transclude="" class="md-label">No</div>
+                                                                        </md-radio-button>
+                                                                        <md-radio-button class="md-primary md-mbBroker-theme" data-ng-value="false" id="radio_124" role="radio" aria-checked="false"
+                                                                            aria-label="Team" value="false">
+                                                                            <div class="md-container md-ink-ripple" md-ink-ripple="" md-ink-ripple-checkbox="">
+                                                                                <div class="md-off"></div>
+                                                                                <div class="md-on"></div>
+                                                                            </div>
+                                                                            <div ng-transclude="" class="md-label">Yes</div>
+                                                                        </md-radio-button>
+                                                                    </md-radio-group>
+                                                                </div>
+                                                                <div hide-xs="" hide-sm="" class="controls hide-sm hide-xs ng-scope" data-ng-if="$ctrl.showActionButtons">
+                                                                    <button type="button" class="secondary-button">BACK</button>
+                                                                    <button type="submit">CONTINUE</button>
+                                                                </div>
+                                                            </md-card-content>
+                                                        </deal-panel-tasks>
+                                                    </md-card>
+                                                </div>
+                                            </div>
+                                        </deals-detail-overview>
+                                    </div>
+                                </div>
+                            </deals-detail>
+                        </div>
+                    </md-content>
+                    <!-- end ngIf: $ctrl.userData && $ctrl.userOptions -->
+                </div>
+            </div>
+        </app>
+    </data-ui-view>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,500,600,700" rel="stylesheet" property="stylesheet"
+        type="text/css">
+    <md-virtual-repeat-container md-auto-shrink="" md-auto-shrink-min="1" ng-mouseenter="$mdAutocompleteCtrl.listEnter()" ng-mouseleave="$mdAutocompleteCtrl.listLeave()"
+        ng-mouseup="$mdAutocompleteCtrl.mouseUp()" ng-hide="$mdAutocompleteCtrl.hidden" class="md-autocomplete-suggestions-container md-whiteframe-z1 md-virtual-repeat-container md-orient-vertical ng-hide md-mbBroker-theme"
+        ng-class="{ 'md-not-found': $mdAutocompleteCtrl.notFoundVisible() }" role="presentation" aria-hidden="true" style="left: 2px; max-width: 1432px; top: 0px; bottom: auto; max-height: 225.5px;">
+        <div class="md-virtual-repeat-scroller">
+            <div class="md-virtual-repeat-sizer"></div>
+            <div class="md-virtual-repeat-offsetter">
+                <ul class="md-autocomplete-suggestions autocomplete-custom-template" ng-class="::menuClass" id="ul-11">
+                    <!-- mdVirtualRepeat: item in $mdAutocompleteCtrl.matches -->
+                    <!-- ngIf: $mdAutocompleteCtrl.notFoundVisible() -->
+                </ul>
+            </div>
+        </div>
+    </md-virtual-repeat-container>
+    <md-virtual-repeat-container md-auto-shrink="" md-auto-shrink-min="1" ng-mouseenter="$mdAutocompleteCtrl.listEnter()" ng-mouseleave="$mdAutocompleteCtrl.listLeave()"
+        ng-mouseup="$mdAutocompleteCtrl.mouseUp()" ng-hide="$mdAutocompleteCtrl.hidden" class="md-autocomplete-suggestions-container md-whiteframe-z1 md-virtual-repeat-container md-orient-vertical ng-hide md-mbBroker-theme"
+        ng-class="{ 'md-not-found': $mdAutocompleteCtrl.notFoundVisible() }" role="presentation" aria-hidden="true" style="left: 1144.48px; min-width: 269.5px; max-width: 1405.98px; top: 403px; bottom: auto; max-height: 225.5px;">
+        <div class="md-virtual-repeat-scroller">
+            <div class="md-virtual-repeat-sizer"></div>
+            <div class="md-virtual-repeat-offsetter">
+                <ul class="md-autocomplete-suggestions autocomplete-custom-template" ng-class="::menuClass" id="ul-15">
+                    <!-- mdVirtualRepeat: item in $mdAutocompleteCtrl.matches -->
+                </ul>
+            </div>
+        </div>
+    </md-virtual-repeat-container>
+</body>
+
+</html>
