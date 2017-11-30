@@ -21,7 +21,7 @@
       <h1 data-v-ee2ab8f0="" class="page-title dark-theme">Tools and Apps Login</h1>
       <div data-v-ee2ab8f0="" class="card card--sm">
         <h1 data-v-ee2ab8f0="" class="major-section">CBRE SSO</h1>
-        <button data-v-ee2ab8f0="" type="button" class="button button--primary block">Sign In</button>
+        <button data-v-ee2ab8f0="" type="button" class="button button--primary block" id="sign-in-button">Sign In</button>
       </div>
       <div data-v-ee2ab8f0="" class="footer">
         <a data-v-ee2ab8f0="" href="http://www.cbre.us/about/careers" target="_blank" class="button button--secondary">Join Our Team</a>
@@ -30,9 +30,16 @@
       <p data-v-ee2ab8f0="" class="dark-theme">The Worldwide Leader in Commercial Real Estate Services</p>
     </div>
   </div>
-  <script type="text/javascript" src="./login_files/manifest.fdb6564dde2ddb9ff5c0.js"></script>
+  <script>
+    document.getElementById("sign-in-button").addEventListener("click", myFunction);
+
+    function myFunction() {
+      window.location.assign("sso.htm")
+    }
+  </script>
+  <!-- <script type="text/javascript" src="./login_files/manifest.fdb6564dde2ddb9ff5c0.js"></script>
   <script type="text/javascript" src="./login_files/vendor.a7ab2d28b1d7fd969502.js"></script>
-  <script type="text/javascript" src="./login_files/app.29304c4fb270932ad213.js"></script>
+  <script type="text/javascript" src="./login_files/app.29304c4fb270932ad213.js"></script> -->
 </body>
 
 </html>
