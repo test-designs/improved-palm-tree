@@ -13715,7 +13715,7 @@
       position: absolute;
     }
   </style>
-  <title data-ng-bind="fullPageTitle" class="ng-binding">Dashboard | CBRE Deal IQ</title>
+  <title data-ng-bind="fullPageTitle" class="ng-binding">Dashboard | CBRE Vouchering</title>
   <meta name="viewport" content="user-scalable=no">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!--<base href="/">-->
@@ -25061,7 +25061,7 @@
             <md-content md-scroll-y="" class="sidebar-content _md md-mbBroker-dark-theme">
               <div class="nav-group">
                 <div class="nav-top">
-                  <a class="nav-logo md-mbBroker-dark-theme" data-ui-sref="app.dashboard" href="https://dealiq.cbre.io/dashboard">
+                  <a class="nav-logo md-mbBroker-dark-theme" data-ui-sref="app.dashboard" href="./dashboard.htm">
                     <img src="./dashboard_files/vouchering-logo-on-black.svg" alt="Logo" class="nav-logo__img">
                   </a>
                   <md-menu md-theme="mbBroker" md-offset="0 50" class="nav-new-button md-menu ng-scope _md">
@@ -25070,111 +25070,85 @@
                       aria-expanded="false" aria-owns="menu_container_0">
                       <span class="ng-scope">New</span>
                       <md-icon md-font-icon="icon-sort-desc" class="md-icon--sm ng-scope md-mbBroker-theme md-font material-icons icon-sort-desc"
-                        aria-hidden="true"></md-icon>
+                        aria-hidden="true" style="visibility: hidden;"></md-icon>
                       <div class="md-ripple-container" style=""></div>
                     </button>
                   </md-menu>
                   <md-list role="list" class="md-mbBroker-dark-theme">
-                    <md-list-item data-ui-sref-active="active active--green" role="listitem" class="_md-button-wrap _md md-clickable active active--green"
-                      tabindex="-1" href="/dashboard">
+                    <md-list-item role="listitem" class="_md-button-wrap _md md-clickable active active--green"
+                      tabindex="-1" href="./dashboard.htm">
                       <div class="md-button md-no-style">
-                        <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" ng-transclude="" aria-label="Dashboard"
-                          data-ng-click="$ctrl.closeMenu()" data-ui-sref="app.dashboard" href="https://dealiq.cbre.io/dashboard"></a>
+                        <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" href="./dashboard.htm"></a>
                         <div class="md-list-item-inner">Dashboard</div>
                         <div class="md-secondary-container"></div>
                       </div>
                     </md-list-item>
-                    <md-list-item data-e2e="prospects-route-btn" data-ng-class="{&#39;active active--purple&#39;: $ctrl.dealLifeCycleStage === &#39;prospect&#39;}"
-                      role="listitem" class="_md-button-wrap _md md-clickable" tabindex="-1" href="/deals/prospects">
+                    <md-list-item role="listitem" class="_md-button-wrap _md md-clickable" tabindex="-1" href="./screening.htm">
                       <div class="md-button md-no-style">
-                        <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" ng-transclude="" aria-label="Prospecting (1)"
-                          data-ng-click="$ctrl.closeMenu()" data-ui-sref="app.deals.prospects" href="https://dealiq.cbre.io/deals/prospects">
-                          <div class="md-ripple-container" style=""></div>
+                        <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" href="./screening.htm">
+                          <div class="md-ripple-container"></div>
                         </a>
                         <div class="md-list-item-inner">
                           <span>Screening</span>
-                          <!-- ngIf: $ctrl.prospects -->
-                          <span data-ng-if="$ctrl.prospects" class="ng-binding ng-scope" style="">&nbsp;(1)</span>
-                          <!-- end ngIf: $ctrl.prospects -->
+                          <span>&nbsp;(2)</span>
                         </div>
                         <div class="md-secondary-container"></div>
                       </div>
                     </md-list-item>
-                    <md-list-item data-e2e="executing-deals-route-btn" data-ng-class="{&#39;active active--blue&#39;: $ctrl.dealLifeCycleStage === &#39;executing&#39;}"
-                      role="listitem" class="_md-button-wrap _md md-clickable" tabindex="-1" href="/deals/executing">
+                    <md-list-item role="listitem" class="_md-button-wrap _md md-clickable" tabindex="-1" href="./applications.htm">
                       <div class="md-button md-no-style">
-                        <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" ng-transclude="" aria-label="Executing (0)"
-                          data-ng-click="$ctrl.closeMenu()" data-ui-sref="app.deals.executing" href="https://dealiq.cbre.io/deals/executing"></a>
+                        <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" href="./applications.htm"></a>
                         <div class="md-list-item-inner">
                           <span>Applications</span>
-                          <!-- ngIf: $ctrl.executing -->
-                          <span data-ng-if="$ctrl.executing" class="ng-binding ng-scope" style="">&nbsp;(0)</span>
-                          <!-- end ngIf: $ctrl.executing -->
+                          <span>&nbsp;(3)</span>
                         </div>
                         <div class="md-secondary-container"></div>
                       </div>
                     </md-list-item>
-                    <md-list-item data-e2e="closed-deals-route-btn" data-ng-class="{&#39;active active--lime&#39;: $ctrl.dealLifeCycleStage === &#39;closed&#39;}"
-                      role="listitem" class="_md-button-wrap _md md-clickable" tabindex="-1" href="/deals/closed">
+                    <md-list-item role="listitem" class="_md-button-wrap _md md-clickable" tabindex="-1" href="./committed.htm">
                       <div class="md-button md-no-style">
-                        <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" ng-transclude="" aria-label="Closed (0)"
-                          data-ng-click="$ctrl.closeMenu()" data-ui-sref="app.deals.closed" href="https://dealiq.cbre.io/deals/closed">
-                          <div class="md-ripple-container" style=""></div>
+                        <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" href="./committed.htm">
+                          <div class="md-ripple-container"></div>
                         </a>
                         <div class="md-list-item-inner">
                           <span>Committed</span>
-                          <!-- ngIf: $ctrl.closed -->
-                          <span data-ng-if="$ctrl.closed" class="ng-binding ng-scope" style="">&nbsp;(0)</span>
-                          <!-- end ngIf: $ctrl.closed -->
+                          <span>&nbsp;(2)</span>
                         </div>
                         <div class="md-secondary-container"></div>
                       </div>
                     </md-list-item>
-                    <md-list-item data-e2e="closed-deals-route-btn" data-ng-class="{&#39;active active--lime&#39;: $ctrl.dealLifeCycleStage === &#39;closed&#39;}"
-                      role="listitem" class="_md-button-wrap _md md-clickable" tabindex="-1" href="/deals/closed">
+                    <md-list-item role="listitem" class="_md-button-wrap _md md-clickable" tabindex="-1" href="./closed.htm">
                       <div class="md-button md-no-style">
-                        <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" ng-transclude="" aria-label="Closed (0)"
-                          data-ng-click="$ctrl.closeMenu()" data-ui-sref="app.deals.closed" href="https://dealiq.cbre.io/deals/closed">
-                          <div class="md-ripple-container" style=""></div>
+                        <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" href="./closed.htm">
+                          <div class="md-ripple-container"></div>
                         </a>
                         <div class="md-list-item-inner">
                           <span>Closed</span>
-                          <!-- ngIf: $ctrl.closed -->
-                          <span data-ng-if="$ctrl.closed" class="ng-binding ng-scope" style="">&nbsp;(0)</span>
-                          <!-- end ngIf: $ctrl.closed -->
+                          <span>&nbsp;(5)</span>
                         </div>
                         <div class="md-secondary-container"></div>
                       </div>
                     </md-list-item>
-                    <md-list-item data-e2e="closed-deals-route-btn" data-ng-class="{&#39;active active--lime&#39;: $ctrl.dealLifeCycleStage === &#39;closed&#39;}"
-                      role="listitem" class="_md-button-wrap _md md-clickable" tabindex="-1" href="/deals/closed">
+                    <md-list-item role="listitem" class="_md-button-wrap _md md-clickable" tabindex="-1" href="./booked.htm">
                       <div class="md-button md-no-style">
-                        <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" ng-transclude="" aria-label="Closed (0)"
-                          data-ng-click="$ctrl.closeMenu()" data-ui-sref="app.deals.closed" href="https://dealiq.cbre.io/deals/closed">
-                          <div class="md-ripple-container" style=""></div>
+                        <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" href="./booked.htm">
+                          <div class="md-ripple-container"></div>
                         </a>
                         <div class="md-list-item-inner">
                           <span>Booked</span>
-                          <!-- ngIf: $ctrl.closed -->
-                          <span data-ng-if="$ctrl.closed" class="ng-binding ng-scope" style="">&nbsp;(0)</span>
-                          <!-- end ngIf: $ctrl.closed -->
+                          <span>&nbsp;(3)</span>
                         </div>
                         <div class="md-secondary-container"></div>
                       </div>
                     </md-list-item>
-                    <!-- ngIf: $ctrl.userOptions.feature_flags.commissions_chart_feature_flag -->
-                    <!-- end ngIf: $ctrl.userOptions.feature_flags.commissions_chart_feature_flag -->
-                    <!-- ngIf: $ctrl.userOptions.feature_flags.personal_contacts_feature_flag -->
                   </md-list>
                 </div>
                 <div class="nav-bottom">
                   <div class="full-width">
                     <md-list role="list" class="md-mbBroker-dark-theme">
-                      <md-list-item data-e2e="support-route-btn" data-ng-class="{&#39;active active--lime&#39;: $ctrl.state.includes(&#39;app.support&#39;)}"
-                        role="listitem" class="_md-button-wrap _md md-clickable" tabindex="-1" href="/support/overview">
+                      <md-list-item role="listitem" class="_md-button-wrap _md md-clickable" tabindex="-1" href="#">
                         <div class="md-button md-no-style">
-                          <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" ng-transclude="" aria-label="Support"
-                            data-ng-click="$ctrl.closeMenu()" data-ui-sref="app.support.overview" href="https://dealiq.cbre.io/support/overview"></a>
+                          <a class="md-no-style md-button md-mbBroker-dark-theme md-ink-ripple" href="#"></a>
                           <div class="md-list-item-inner">Support</div>
                           <div class="md-secondary-container"></div>
                         </div>
@@ -25238,13 +25212,10 @@
                       <md-icon md-font-icon="icon-chat-help" class="md-icon--md ng-scope md-mbBroker-dark-theme md-font material-icons icon-chat-help"
                         aria-hidden="true"></md-icon>
                     </button>
-                    <div hide-xs="" class="mr1 hide-xs"></div>
-                    <a data-e2e="profile-route-btn" class="avatar avatar--md ml-half md-mbBroker-dark-theme" data-ui-sref="app.profile"
-                      href="https://dealiq.cbre.io/profile">
-                      <div class="avatar-photo" data-ng-style="{ &#39;background-image&#39; : &#39;url(&#39; + $ctrl.userData.avatar + &#39;)&#39; }"></div>
-                      <!-- ngIf: !$ctrl.userData.avatar -->
-                      <div class="avatar-initial ng-binding ng-scope" data-ng-if="!$ctrl.userData.avatar" style="">JL</div>
-                      <!-- end ngIf: !$ctrl.userData.avatar -->
+                    <div class="mr1 hide-xs"></div>
+                    <a data-e2e="profile-route-btn" class="avatar avatar--md ml-half md-mbBroker-dark-theme" href="#">
+                      <div class="avatar-photo"></div>
+                      <div class="avatar-initial">JL</div>
                     </a>
                     <div class="mr1"></div>
                   </div>
@@ -25310,19 +25281,19 @@
                               </empty-state>
                               <div layout="row" layout-align="center center" class="layout-align-center-center layout-row">
                                 <div>
-                                  <button data-ui-sref="app.deals.prospects" href="/deals/prospects">Screening</button>
+                                  <button data-ui-sref="app.deals.prospects" href="./screening.htm">Screening</button>
                                 </div>
                                 <div class="ml1">
-                                  <button data-ui-sref="app.deals.executing" href="/deals/executing">Applications</button>
+                                  <button data-ui-sref="app.deals.executing" href=".applications.htm">Applications</button>
                                 </div>
                                 <div class="ml1">
-                                  <button data-ui-sref="app.deals.closed" href="/deals/closed">Committed</button>
+                                  <button data-ui-sref="app.deals.closed" href="./committed.htm">Committed</button>
                                 </div>
                                 <div class="ml1">
-                                  <button data-ui-sref="app.deals.closed" href="/deals/closed">Closed</button>
+                                  <button data-ui-sref="app.deals.closed" href="./closed.htm">Closed</button>
                                 </div>
                                 <div class="ml1">
-                                  <button data-ui-sref="app.deals.closed" href="/deals/closed">Booked</button>
+                                  <button data-ui-sref="app.deals.closed" href="./booked.htm">Booked</button>
                                 </div>
                               </div>
                             </div>
