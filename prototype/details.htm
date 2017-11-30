@@ -25512,6 +25512,36 @@
                               <header>
                                 <h2>Main Information</h2>
                               </header>
+                              <form>
+                                <fieldset>
+                                  <label for="primary-fee-type">Primary Fee Type:</label>
+                                  <md-select name="primary-fee-type" placeholder="Select" class="md-mbBroker-theme ng-empty" tabindex="0"
+                                    role="listbox">
+                                    <md-select-value class="md-select-value md-select-placeholder">
+                                      <span>Select</span>
+                                      <span class="md-select-icon" aria-hidden="true"></span>
+                                    </md-select-value>
+                                  </md-select>
+                                  <label>Expected Closing:</label>
+                                  <input type="text" value="10/1/2017">
+                                  <label>CBRE Net Fee</label>
+                                  <input type="text" value="2782">
+                                  <label>Gross Fee % of Deal:</label>
+                                  <input type="text" value="322.600">
+                                  <label>Status</label>
+                                  <input type="text" value="Active">
+                                  <label>Stage:</label>
+                                  <input type="text" value="Screening">
+                                  <label for="primary-fee-type">Financing Purpose:</label>
+                                  <md-select name="primary-fee-type" placeholder="Select" class="md-mbBroker-theme ng-empty" tabindex="0"
+                                    role="listbox">
+                                    <md-select-value class="md-select-value md-select-placeholder">
+                                      <span>Select</span>
+                                      <span class="md-select-icon" aria-hidden="true"></span>
+                                    </md-select-value>
+                                  </md-select>
+                                </fieldset>
+                              </form>
                             </md-card-content>
                           </md-card>
                         </div>
@@ -25700,32 +25730,19 @@
                                         </div>
                                       </div>
                                       <div class="actions">
-                                        <!-- ngIf: note.editMode -->
-                                        <!-- ngIf: note.can_edit -->
                                         <div data-ng-if="note.can_edit" class="ng-scope" style="">
-                                          <!-- ngIf: !note.editMode -->
                                           <button class="md-icon-button md-button ng-scope md-mbBroker-theme md-ink-ripple" type="button" ng-transclude="" data-e2e="edit-note-button"
                                             aria-label="Edit Note" data-ng-if="!note.editMode" data-ng-click="$ctrl.toggleEdit(note)">
                                             <md-icon md-font-icon="icon-edit" class="md-primary md-icon--xs ng-scope md-mbBroker-theme md-font material-icons icon-edit"
                                               aria-hidden="true"></md-icon>
                                           </button>
-                                          <!-- end ngIf: !note.editMode -->
                                         </div>
-                                        <!-- end ngIf: note.can_edit -->
                                       </div>
                                     </header>
-                                    <!-- ngIf: !note.editMode && $ctrl.userOptions.feature_flags.deal_notes_feature_flag -->
                                     <p data-e2e="note-content" data-ng-bind-html="note.body | userOutput" data-ng-if="!note.editMode &amp;&amp; $ctrl.userOptions.feature_flags.deal_notes_feature_flag"
                                       class="ng-binding ng-scope" style="">Please update this.</p>
-                                    <!-- end ngIf: !note.editMode && $ctrl.userOptions.feature_flags.deal_notes_feature_flag -->
-                                    <!-- ngIf: !note.editMode && !$ctrl.userOptions.feature_flags.deal_notes_feature_flag -->
-                                    <!-- ngIf: note.editMode -->
                                   </md-card-content>
-                                  <!-- ngIf: note.editMode -->
                                 </div>
-                                <!-- end ngRepeat: note in $ctrl.notes.results -->
-                                <!-- ngIf: $ctrl.loadingMoreNotes -->
-                                <!-- ngIf: $ctrl.showSeeAllNotesButton -->
                               </div>
                             </deal-panel-notes>
                           </md-card>
@@ -25737,7 +25754,6 @@
               </deals-detail>
             </div>
           </md-content>
-          <!-- end ngIf: $ctrl.userData && $ctrl.userOptions -->
         </div>
       </div>
     </app>
@@ -25751,55 +25767,14 @@
       display: none;
     }
   </style>
-  <div style="display: none; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center;"
-    class="ie-10-message">
-    <p>Internet Explorer 10 and below are not supported.</p>
-    <p>Please
-      <a href="http://browsehappy.com/" class="md-mbBroker-theme">upgrade your browser</a>.</p>
-  </div>
   <link href="./details_files/css" rel="stylesheet" property="stylesheet" type="text/css">
-  <iframe id="intercom-frame" style="display: none;" src="./details_files/saved_resource.html"></iframe>
-  <div id="intercom-container" style="position: fixed; width: 0px; height: 0px; bottom: 0px; right: 0px; z-index: 2147483647;">
-    <div data-reactroot="" class="intercom-app">
-      <span></span>
-      <span></span>
-      <!-- react-empty: 5 -->
-      <span></span>
-      <!-- react-empty: 7 -->
-    </div>
-  </div>
-  <md-virtual-repeat-container md-auto-shrink="" md-auto-shrink-min="1" ng-mouseenter="$mdAutocompleteCtrl.listEnter()" ng-mouseleave="$mdAutocompleteCtrl.listLeave()"
-    ng-mouseup="$mdAutocompleteCtrl.mouseUp()" ng-hide="$mdAutocompleteCtrl.hidden" class="md-autocomplete-suggestions-container md-whiteframe-z1 md-virtual-repeat-container md-orient-vertical ng-hide md-mbBroker-theme"
-    ng-class="{ &#39;md-not-found&#39;: $mdAutocompleteCtrl.notFoundVisible() }" role="presentation" aria-hidden="true">
-    <div class="md-virtual-repeat-scroller">
-      <div class="md-virtual-repeat-sizer"></div>
-      <div class="md-virtual-repeat-offsetter">
-        <ul class="md-autocomplete-suggestions autocomplete-custom-template" ng-class="::menuClass" id="ul-3">
-          <!-- mdVirtualRepeat: item in $mdAutocompleteCtrl.matches -->
-          <!-- ngIf: $mdAutocompleteCtrl.notFoundVisible() -->
-        </ul>
-      </div>
-    </div>
-  </md-virtual-repeat-container>
-  <md-virtual-repeat-container md-auto-shrink="" md-auto-shrink-min="1" ng-mouseenter="$mdAutocompleteCtrl.listEnter()" ng-mouseleave="$mdAutocompleteCtrl.listLeave()"
-    ng-mouseup="$mdAutocompleteCtrl.mouseUp()" ng-hide="$mdAutocompleteCtrl.hidden" class="md-autocomplete-suggestions-container md-whiteframe-z1 md-virtual-repeat-container md-orient-vertical ng-hide md-mbBroker-theme"
-    ng-class="{ &#39;md-not-found&#39;: $mdAutocompleteCtrl.notFoundVisible() }" role="presentation" aria-hidden="true">
-    <div class="md-virtual-repeat-scroller">
-      <div class="md-virtual-repeat-sizer"></div>
-      <div class="md-virtual-repeat-offsetter">
-        <ul class="md-autocomplete-suggestions autocomplete-custom-template" ng-class="::menuClass" id="ul-7">
-          <!-- mdVirtualRepeat: item in $mdAutocompleteCtrl.matches -->
-        </ul>
-      </div>
-    </div>
-  </md-virtual-repeat-container>
   <script>
-      document.getElementById("favoriteStar").addEventListener("click", myFunction);
-  
-      function myFunction() {
-        window.location.assign("dashboard2.htm")
-      }
-    </script>
+    document.getElementById("favoriteStar").addEventListener("click", myFunction);
+
+    function myFunction() {
+      window.location.assign("dashboard2.htm")
+    }
+  </script>
 </body>
 
 </html>
