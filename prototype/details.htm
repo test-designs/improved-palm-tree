@@ -25216,21 +25216,14 @@
                       <div flex="" layout-align="start stretch" layout-gt-md="row" class="layout-gt-md-row layout-align-start-stretch flex">
                         <div>
                           <h1 class="ng-animate-disabled" data-ng-hide="$ctrl.editMode" aria-hidden="false">
-                            <span data-e2e="deal-detail-name" class="editable-area ng-binding" data-ng-click="$ctrl.editModeToggle(true)" data-ng-class="{ &#39;unclickable&#39;: $ctrl.deal.deal_life_cycle_stage === &#39;closed&#39; }"
-                              role="button" tabindex="0">Example Deal
-                              <favorite-star is-favorite="$ctrl.deal.is_favorite" on-un-favorite="$ctrl.unFavoriteDeal()" on-favorite="$ctrl.favoriteDeal()"
-                                class="ng-isolate-scope">
-                                <!-- ngIf: $ctrl.isFavorite -->
-                                <button class="md-icon-button md-button ng-scope md-mbBroker-theme md-ink-ripple" type="button" ng-transclude="" data-ng-click="$ctrl.unFavorite($event)"
-                                  data-ng-if="$ctrl.isFavorite">
+                            <span class="editable-area" role="button" tabindex="0">Example Deal
+                              <favorite-star id="favoriteStar">
+                                <button class="md-icon-button md-button md-mbBroker-theme md-ink-ripple" type="button">
                                   <md-icon md-font-icon="icon-star-filled" class="md-icon--md md-icon--yellow ng-scope md-mbBroker-theme md-font material-icons icon-star-filled"
                                     aria-label="icon-star-filled" role="img"></md-icon>
                                 </button>
-                                <!-- end ngIf: $ctrl.isFavorite -->
-                                <!-- ngIf: !$ctrl.isFavorite -->
                               </favorite-star>
                             </span>
-                            <!-- ngIf: $ctrl.deal.user_wants_salesforce_export -->
                           </h1>
                           <p class="editable-area color-secondary ng-animate-disabled" data-ng-hide="$ctrl.editMode" data-ng-click="$ctrl.editModeToggle(true)"
                             data-ng-class="{ &#39;unclickable&#39;: $ctrl.deal.deal_life_cycle_stage === &#39;closed&#39; }"
@@ -25483,16 +25476,16 @@
                                   <label>Deal #:</label>
                                   <input type="text" value="256483">
                                   <label for="property-type">Property Type:</label>
-                                  <md-select name="property-type" placeholder="Select" class="ng-pristine ng-untouched ng-valid md-mbBroker-theme ng-empty" tabindex="0"
-                                    role="listbox">
+                                  <md-select name="property-type" placeholder="Select" class="ng-pristine ng-untouched ng-valid md-mbBroker-theme ng-empty"
+                                    tabindex="0" role="listbox">
                                     <md-select-value class="md-select-value md-select-placeholder">
                                       <span>Select</span>
                                       <span class="md-select-icon" aria-hidden="true"></span>
                                     </md-select-value>
                                   </md-select>
                                   <label for="deal-structure">Deal Structure:</label>
-                                  <md-select name="deal-structure" placeholder="Select" class="ng-pristine ng-untouched ng-valid md-mbBroker-theme ng-empty" tabindex="0"
-                                    role="listbox">
+                                  <md-select name="deal-structure" placeholder="Select" class="ng-pristine ng-untouched ng-valid md-mbBroker-theme ng-empty"
+                                    tabindex="0" role="listbox">
                                     <md-select-value class="md-select-value md-select-placeholder">
                                       <span>Select</span>
                                       <span class="md-select-icon" aria-hidden="true"></span>
@@ -25800,6 +25793,13 @@
       </div>
     </div>
   </md-virtual-repeat-container>
+  <script>
+      document.getElementById("favoriteStar").addEventListener("click", myFunction);
+  
+      function myFunction() {
+        window.location.assign("dashboard2.htm")
+      }
+    </script>
 </body>
 
 </html>
