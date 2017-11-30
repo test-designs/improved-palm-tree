@@ -8,8 +8,7 @@
 	.st2{fill:#026B4E;}
 	.st3{fill:#00A657;}
 	.st4{font-family:'LemonMilk';}
-	.st5{font-size:20px;}
-	.st6{letter-spacing:-1;}
+	.st5{font-size:16px;}
 </style>
 <g>
 	<g>
@@ -36,5 +35,5 @@
 		l0,0C42.5,36.8,39.4,35.1,38.4,32.2L38.4,32.2z"/>
 	<circle class="st0" cx="25.2" cy="25.6" r="4.6"/>
 </g>
-<text transform="matrix(1 0 0 1 60.7 40.3997)" class="st4 st5 st6">vouchering</text>
+<text transform="matrix(1 0 0 1 60.6998 34.9319)" class="st4 st5">vouchering</text>
 </svg>
