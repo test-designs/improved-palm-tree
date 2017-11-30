@@ -25515,6 +25515,123 @@
                                   </div>
                                 </div>
                                 <div layout="column" layout-gt-sm="row" layout-align="space-between stretch" class="flex-table-row layout-gt-sm-row layout-align-space-between-stretch layout-column">
+                                    <div flex="20" class="flex-table-cell flex-20">
+                                      <div flex="" layout-xs="row" layout-sm="row" layout-align="center start" layout-align-gt-sm="start start"
+                                        class="flex-fill layout-xs-row layout-sm-row layout-align-gt-sm-start-start layout-align-center-start flex">
+                                        <div>
+                                          <a class="deal-name md-mbBroker-theme"href="./details.htm">693074</a>
+                                          <p>Jackie Chan</p>
+                                          <div hide-xs="" hide-sm="" layout="row" layout-align="start" class="mt1 hide-sm hide-xs layout-align-start-stretch layout-row">
+                                            <div flex="60" layout="row" layout-align="start center" class="layout-align-start-center layout-row flex-60">
+                                              <div>
+                                                <a class="deal-sub-link md-mbBroker-theme">888-8888</a>
+                                              </div>
+                                            </div>
+                                            <div flex="none" class="mr1 flex-none">|</div>
+                                            <div flex="40" layout="row" class="layout-row flex-40">
+                                              <div>
+                                                <a class="md-mbBroker-theme">+Email</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div hide-gt-sm="" flex="noshrink" layout="row" layout-align="end end" class="hide-gt-sm layout-align-end-end layout-row flex-noshrink">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div hide-xs="" hide-sm="" flex="20" class="flex-table-cell hide-sm hide-xs flex-20">
+                                      <flex-table-address flex="" layout="row" layout-align="start" class="flex-fill layout-align-start-stretch layout-row flex">
+                                        <div flex="" layout="column" class="layout-column flex">
+                                          <div class="na-notice">
+                                            <div class="property-image property-image--fallback"></div>
+                                            <p class="address">
+                                              <span>Jackie Chan Stunt Academy</span>
+                                              <span>Hong Kong</span>
+                                            </p>
+                                            <div>
+                                              <ul class="comma-delimiter">
+                                                <li>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </flex-table-address>
+                                    </div>
+                                    <div hide-xs="" hide-sm="" flex="20" class="flex-table-cell hide-sm hide-xs flex-20">
+                                      <flex-table-number flex="" layout="row" layout-align="start" class="flex-fill layout-align-start-stretch layout-row flex">
+                                        <span>Bruce Lee</span>
+                                      </flex-table-number>
+                                    </div>
+                                    <div flex="20" class="flex-table-cell hide-sm hide-xs hide-md flex-20">
+                                      <flex-table-text flex="" layout="row" layout-align="start"
+                                        class="flex-fill layout-align-start-stretch layout-row flex">
+                                        <div class="text-capitalize">Jet Li</div>
+                                      </flex-table-text>
+                                    </div>
+                                    <div flex="20" class="flex-table-cell hide-sm hide-xs hide-md flex-20">
+                                      <flex-table-text flex="" layout="row" layout-align="start"
+                                        class="flex-fill layout-align-start-stretch layout-row flex">
+                                        <div class="text-capitalize">$386,473</div>
+                                      </flex-table-text>
+                                    </div>
+                                    <!-- end ngIf: ($ctrl.selectedDeal && $index === 0) || !$ctrl.selectedDeal -->
+                                    <!-- end ngRepeat: column in $ctrl.savedColumnKeys -->
+                                    <!-- ngIf: ($ctrl.selectedDeal && $index === 0) || !$ctrl.selectedDeal -->
+                                    <div hide-xs="" hide-sm="" flex="20" class="flex-table-cell ng-animate-disabled hide-sm hide-xs ng-scope hide-lg hide-md flex-20"
+                                      data-ng-repeat="column in $ctrl.savedColumnKeys" data-ng-if="($ctrl.selectedDeal &amp;&amp; $index === 0) || !$ctrl.selectedDeal"
+                                      data-ng-class="{'hide-lg hide-md': $index === 3, 'hide-md': $index === 2, 'hide-sm': $index === 1}">
+                                      <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'text' -->
+                                      <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'number' -->
+                                      <!-- ngIf: ::column === 'sqft_range' -->
+                                      <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'percentage' -->
+                                      <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'address' -->
+                                      <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'date' -->
+                                      <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'date_read_only' -->
+                                      <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'tags' -->
+                                      <flex-table-tags flex="" layout="row" layout-align="start" tags="::deal.tags" class="flex-fill ng-animate-disabled ng-scope ng-isolate-scope layout-align-start-stretch layout-row flex"
+                                        data-ng-if="::$ctrl.columnDefs[column].componentType === 'tags'">
+                                        <ul class="tag-list">
+                                          <!-- ngRepeat: tag in $ctrl.tags | limitTo : 5 -->
+                                          <a class="md-mbBroker-theme ng-hide" data-ng-click="$ctrl.showAllTags = !$ctrl.showAllTags"
+                                            data-ng-hide="$ctrl.tags.length <= 5 || $ctrl.showAllTags" aria-hidden="true">View All</a>
+                                          <div class="na-notice" data-ng-show="$ctrl.tags.length <= 0" aria-hidden="false">Add tags in deal detail overview.</div>
+                                          <!-- ngRepeat: tag in $ctrl.tags | limitTo: 5 - $ctrl.tags.length -->
+                                        </ul>
+                                      </flex-table-tags>
+                                      <!-- end ngIf: ::$ctrl.columnDefs[column].componentType === 'tags' -->
+                                      <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'occupancy_date' -->
+                                      <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'date_est_close' -->
+                                      <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'date_approved' -->
+                                    </div>
+                                    <!-- end ngIf: ($ctrl.selectedDeal && $index === 0) || !$ctrl.selectedDeal -->
+                                    <!-- end ngRepeat: column in $ctrl.savedColumnKeys -->
+                                    <div hide-xs="" hide-sm="" class="flex-table-cell flex-table-cell--actions ng-animate-disabled hide-sm hide-xs">
+                                      <div layout="row" layout-align="space-around center" class="flex-table-actions flex-fill layout-align-space-around-center layout-row">
+                                        <div class="flex-table-cell-action ng-animate-disabled" data-ng-click="$ctrl.openPanel(deal, 'notes')"
+                                          data-ng-class="{'flex-table-cell-action--active': $ctrl.selectedDeal === deal &amp;&amp; $ctrl.selectedAction === 'notes'}"
+                                          aria-label="Notes" role="button" tabindex="0">
+                                          <span class="flex-table-actions__icon icon-note"></span>
+                                        </div>
+                                        <div class="flex-table-cell-action ng-animate-disabled" data-ng-click="$ctrl.openPanel(deal, 'contacts')"
+                                          data-ng-class="{'flex-table-cell-action--active': $ctrl.selectedDeal === deal &amp;&amp; $ctrl.selectedAction === 'contacts'}"
+                                          aria-label="Contacts" role="button" tabindex="0">
+                                          <span class="flex-table-actions__icon icon-contacts"></span>
+                                        </div>
+                                        <div class="flex-table-cell-action ng-animate-disabled" data-ng-click="$ctrl.openPanel(deal, 'attachments')"
+                                          data-ng-class="{'flex-table-cell-action--active': $ctrl.selectedDeal === deal &amp;&amp; $ctrl.selectedAction === 'attachments'}"
+                                          aria-label="Attachments" role="button" tabindex="0">
+                                          <span class="flex-table-actions__icon icon-paperclip"></span>
+                                        </div>
+                                        <div class="flex-table-cell-action ng-animate-disabled" data-ng-click="$ctrl.openPanel(deal, 'tasks')"
+                                          data-ng-class="{'flex-table-cell-action--active': $ctrl.selectedDeal === deal &amp;&amp; $ctrl.selectedAction === 'tasks'}"
+                                          aria-label="Tasks" role="button" tabindex="0">
+                                          <span class="flex-table-actions__icon icon-clipboard"></span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <div layout="column" layout-gt-sm="row" layout-align="space-between stretch" class="flex-table-row layout-gt-sm-row layout-align-space-between-stretch layout-column">
                                   <div flex="20" class="flex-table-cell flex-20">
                                     <div flex="" layout-xs="row" layout-sm="row" layout-align="center start" layout-align-gt-sm="start start"
                                       class="flex-fill layout-xs-row layout-sm-row layout-align-gt-sm-start-start layout-align-center-start flex">
@@ -25576,123 +25693,6 @@
                                     <flex-table-text flex="" layout="row" layout-align="start"
                                       class="flex-fill layout-align-start-stretch layout-row flex">
                                       <div class="text-capitalize">$888,888</div>
-                                    </flex-table-text>
-                                  </div>
-                                  <!-- end ngIf: ($ctrl.selectedDeal && $index === 0) || !$ctrl.selectedDeal -->
-                                  <!-- end ngRepeat: column in $ctrl.savedColumnKeys -->
-                                  <!-- ngIf: ($ctrl.selectedDeal && $index === 0) || !$ctrl.selectedDeal -->
-                                  <div hide-xs="" hide-sm="" flex="20" class="flex-table-cell ng-animate-disabled hide-sm hide-xs ng-scope hide-lg hide-md flex-20"
-                                    data-ng-repeat="column in $ctrl.savedColumnKeys" data-ng-if="($ctrl.selectedDeal &amp;&amp; $index === 0) || !$ctrl.selectedDeal"
-                                    data-ng-class="{'hide-lg hide-md': $index === 3, 'hide-md': $index === 2, 'hide-sm': $index === 1}">
-                                    <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'text' -->
-                                    <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'number' -->
-                                    <!-- ngIf: ::column === 'sqft_range' -->
-                                    <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'percentage' -->
-                                    <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'address' -->
-                                    <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'date' -->
-                                    <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'date_read_only' -->
-                                    <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'tags' -->
-                                    <flex-table-tags flex="" layout="row" layout-align="start" tags="::deal.tags" class="flex-fill ng-animate-disabled ng-scope ng-isolate-scope layout-align-start-stretch layout-row flex"
-                                      data-ng-if="::$ctrl.columnDefs[column].componentType === 'tags'">
-                                      <ul class="tag-list">
-                                        <!-- ngRepeat: tag in $ctrl.tags | limitTo : 5 -->
-                                        <a class="md-mbBroker-theme ng-hide" data-ng-click="$ctrl.showAllTags = !$ctrl.showAllTags"
-                                          data-ng-hide="$ctrl.tags.length <= 5 || $ctrl.showAllTags" aria-hidden="true">View All</a>
-                                        <div class="na-notice" data-ng-show="$ctrl.tags.length <= 0" aria-hidden="false">Add tags in deal detail overview.</div>
-                                        <!-- ngRepeat: tag in $ctrl.tags | limitTo: 5 - $ctrl.tags.length -->
-                                      </ul>
-                                    </flex-table-tags>
-                                    <!-- end ngIf: ::$ctrl.columnDefs[column].componentType === 'tags' -->
-                                    <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'occupancy_date' -->
-                                    <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'date_est_close' -->
-                                    <!-- ngIf: ::$ctrl.columnDefs[column].componentType === 'date_approved' -->
-                                  </div>
-                                  <!-- end ngIf: ($ctrl.selectedDeal && $index === 0) || !$ctrl.selectedDeal -->
-                                  <!-- end ngRepeat: column in $ctrl.savedColumnKeys -->
-                                  <div hide-xs="" hide-sm="" class="flex-table-cell flex-table-cell--actions ng-animate-disabled hide-sm hide-xs">
-                                    <div layout="row" layout-align="space-around center" class="flex-table-actions flex-fill layout-align-space-around-center layout-row">
-                                      <div class="flex-table-cell-action ng-animate-disabled" data-ng-click="$ctrl.openPanel(deal, 'notes')"
-                                        data-ng-class="{'flex-table-cell-action--active': $ctrl.selectedDeal === deal &amp;&amp; $ctrl.selectedAction === 'notes'}"
-                                        aria-label="Notes" role="button" tabindex="0">
-                                        <span class="flex-table-actions__icon icon-note"></span>
-                                      </div>
-                                      <div class="flex-table-cell-action ng-animate-disabled" data-ng-click="$ctrl.openPanel(deal, 'contacts')"
-                                        data-ng-class="{'flex-table-cell-action--active': $ctrl.selectedDeal === deal &amp;&amp; $ctrl.selectedAction === 'contacts'}"
-                                        aria-label="Contacts" role="button" tabindex="0">
-                                        <span class="flex-table-actions__icon icon-contacts"></span>
-                                      </div>
-                                      <div class="flex-table-cell-action ng-animate-disabled" data-ng-click="$ctrl.openPanel(deal, 'attachments')"
-                                        data-ng-class="{'flex-table-cell-action--active': $ctrl.selectedDeal === deal &amp;&amp; $ctrl.selectedAction === 'attachments'}"
-                                        aria-label="Attachments" role="button" tabindex="0">
-                                        <span class="flex-table-actions__icon icon-paperclip"></span>
-                                      </div>
-                                      <div class="flex-table-cell-action ng-animate-disabled" data-ng-click="$ctrl.openPanel(deal, 'tasks')"
-                                        data-ng-class="{'flex-table-cell-action--active': $ctrl.selectedDeal === deal &amp;&amp; $ctrl.selectedAction === 'tasks'}"
-                                        aria-label="Tasks" role="button" tabindex="0">
-                                        <span class="flex-table-actions__icon icon-clipboard"></span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div layout="column" layout-gt-sm="row" layout-align="space-between stretch" class="flex-table-row layout-gt-sm-row layout-align-space-between-stretch layout-column">
-                                  <div flex="20" class="flex-table-cell flex-20">
-                                    <div flex="" layout-xs="row" layout-sm="row" layout-align="center start" layout-align-gt-sm="start start"
-                                      class="flex-fill layout-xs-row layout-sm-row layout-align-gt-sm-start-start layout-align-center-start flex">
-                                      <div>
-                                        <a class="deal-name md-mbBroker-theme"href="./details.htm">693074</a>
-                                        <p>Jackie Chan</p>
-                                        <div hide-xs="" hide-sm="" layout="row" layout-align="start" class="mt1 hide-sm hide-xs layout-align-start-stretch layout-row">
-                                          <div flex="60" layout="row" layout-align="start center" class="layout-align-start-center layout-row flex-60">
-                                            <div>
-                                              <a class="deal-sub-link md-mbBroker-theme">888-8888</a>
-                                            </div>
-                                          </div>
-                                          <div flex="none" class="mr1 flex-none">|</div>
-                                          <div flex="40" layout="row" class="layout-row flex-40">
-                                            <div>
-                                              <a class="md-mbBroker-theme">+Email</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div hide-gt-sm="" flex="noshrink" layout="row" layout-align="end end" class="hide-gt-sm layout-align-end-end layout-row flex-noshrink">
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div hide-xs="" hide-sm="" flex="20" class="flex-table-cell hide-sm hide-xs flex-20">
-                                    <flex-table-address flex="" layout="row" layout-align="start" class="flex-fill layout-align-start-stretch layout-row flex">
-                                      <div flex="" layout="column" class="layout-column flex">
-                                        <div class="na-notice">
-                                          <div class="property-image property-image--fallback"></div>
-                                          <p class="address">
-                                            <span>Jackie Chan Stunt Academy</span>
-                                            <span>Hong Kong</span>
-                                          </p>
-                                          <div>
-                                            <ul class="comma-delimiter">
-                                              <li>
-                                              </li>
-                                            </ul>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </flex-table-address>
-                                  </div>
-                                  <div hide-xs="" hide-sm="" flex="20" class="flex-table-cell hide-sm hide-xs flex-20">
-                                    <flex-table-number flex="" layout="row" layout-align="start" class="flex-fill layout-align-start-stretch layout-row flex">
-                                      <span>Bruce Lee</span>
-                                    </flex-table-number>
-                                  </div>
-                                  <div flex="20" class="flex-table-cell hide-sm hide-xs hide-md flex-20">
-                                    <flex-table-text flex="" layout="row" layout-align="start"
-                                      class="flex-fill layout-align-start-stretch layout-row flex">
-                                      <div class="text-capitalize">Jet Li</div>
-                                    </flex-table-text>
-                                  </div>
-                                  <div flex="20" class="flex-table-cell hide-sm hide-xs hide-md flex-20">
-                                    <flex-table-text flex="" layout="row" layout-align="start"
-                                      class="flex-fill layout-align-start-stretch layout-row flex">
-                                      <div class="text-capitalize">$386,473</div>
                                     </flex-table-text>
                                   </div>
                                   <!-- end ngIf: ($ctrl.selectedDeal && $index === 0) || !$ctrl.selectedDeal -->
