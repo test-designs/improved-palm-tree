@@ -30,16 +30,19 @@
               <a data-v-366b850d="" href="https://dealiq.cbre.io/support/overview">Support Site</a>
             </p>
           </div>
-          <a data-v-366b850d="" href="https://dealiq.cbre.io/#sso-callback#tk=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphbWVzLmxhbmdAY2JyZS5jb20iLCJvcmlnX2lhdCI6MTUxMjAwOTE4MywidXNlcm5hbWUiOiIxNzEzOTg5IiwiZXhwIjoxNTEyMDM3OTgzLCJ1c2VyX2lkIjozMjU5NDd9.v-1dvTcoWHsFsPuLuXTk12RGmA3DulqYfQHPxE-tEPg"
-            class="button button--primary block">Open App</a>
+          <a id="openAppButton" class="button button--primary block">Open App</a>
         </div>
         <!---->
       </div>
     </div>
   </div>
-  <!-- <script type="text/javascript" src="./products_files/manifest.fdb6564dde2ddb9ff5c0.js"></script>
-  <script type="text/javascript" src="./products_files/vendor.a7ab2d28b1d7fd969502.js"></script>
-  <script type="text/javascript" src="./products_files/app.29304c4fb270932ad213.js"></script> -->
+  <script>
+    document.getElementById("openAppButton").addEventListener("click", myFunction);
+
+    function myFunction() {
+      window.location.assign("dashboard.htm")
+    }
+  </script>
 </body>
 
 </html>
