@@ -25236,7 +25236,7 @@
                             data-ng-class="{ &#39;unclickable&#39;: $ctrl.deal.deal_life_cycle_stage === &#39;closed&#39; }"
                             role="button" tabindex="0" aria-hidden="false">
                             <!-- ngIf: $ctrl.deal.client -->
-                            <span data-e2e="deal-detail-client" class="editable-area__field ng-binding ng-scope" data-ng-if="$ctrl.deal.client">Deal for AMAZON.COM</span>
+                            <span data-e2e="deal-detail-client" class="editable-area__field ng-binding ng-scope" data-ng-if="$ctrl.deal.client">Last modified: 1/1/1998 12:00:00 AM</span>
                             <!-- end ngIf: $ctrl.deal.client -->
                           </p>
                           <!-- ngIf: $ctrl.deal.deal_life_cycle_stage === 'closed' -->
@@ -25480,94 +25480,36 @@
                               <h2>Deal Details</h2>
                               <form class="ng-pristine ng-valid ng-valid-required">
                                 <fieldset>
-                                  <label for="prop-type">Prop. Type</label>
-                                  <md-select id="prop-type" name="prop-type" placeholder="Select" data-ng-model="$ctrl.requirements.product" data-ng-change="$ctrl.updateRequirements()"
-                                    class="ng-pristine ng-untouched ng-valid md-mbBroker-theme ng-empty" tabindex="0" aria-disabled="false"
-                                    role="listbox" aria-expanded="false" aria-multiselectable="false" aria-owns="select_container_11"
-                                    aria-invalid="false" aria-label="Select">
-                                    <md-select-value class="md-select-value md-select-placeholder" id="select_value_label_8">
+                                  <label>Deal #:</label>
+                                  <input type="text" value="256483">
+                                  <label for="property-type">Property Type:</label>
+                                  <md-select name="property-type" placeholder="Select" class="ng-pristine ng-untouched ng-valid md-mbBroker-theme ng-empty" tabindex="0"
+                                    role="listbox">
+                                    <md-select-value class="md-select-value md-select-placeholder">
                                       <span>Select</span>
                                       <span class="md-select-icon" aria-hidden="true"></span>
                                     </md-select-value>
-                                    <div class="md-select-menu-container" aria-hidden="true" id="select_container_11">
-                                      <md-select-menu class="_md md-mbBroker-theme">
-                                        <md-content class="_md md-mbBroker-theme">
-                                          <md-option value="" tabindex="0" md-option-empty="" class="md-ink-ripple" role="option" aria-selected="false" id="select_option_10">
-                                            <div class="md-text">None</div>
-                                          </md-option>
-                                          <!-- ngRepeat: productType in $ctrl.productTypes -->
-                                          <md-option value="1" data-ng-repeat="productType in $ctrl.productTypes" tabindex="0" class="ng-scope md-ink-ripple" role="option"
-                                            aria-selected="false" id="select_option_14">
-                                            <div class="md-text ng-binding">Office</div>
-                                          </md-option>
-                                          <!-- end ngRepeat: productType in $ctrl.productTypes -->
-                                          <md-option value="2" data-ng-repeat="productType in $ctrl.productTypes" tabindex="0" class="ng-scope md-ink-ripple" role="option"
-                                            aria-selected="false" id="select_option_15">
-                                            <div class="md-text ng-binding">Industrial</div>
-                                          </md-option>
-                                          <!-- end ngRepeat: productType in $ctrl.productTypes -->
-                                          <md-option value="3" data-ng-repeat="productType in $ctrl.productTypes" tabindex="0" class="ng-scope md-ink-ripple" role="option"
-                                            aria-selected="false" id="select_option_16">
-                                            <div class="md-text ng-binding">Retail</div>
-                                          </md-option>
-                                          <!-- end ngRepeat: productType in $ctrl.productTypes -->
-                                          <md-option value="5" data-ng-repeat="productType in $ctrl.productTypes" tabindex="0" class="ng-scope md-ink-ripple" role="option"
-                                            aria-selected="false" id="select_option_17">
-                                            <div class="md-text ng-binding">Multi-family</div>
-                                          </md-option>
-                                          <!-- end ngRepeat: productType in $ctrl.productTypes -->
-                                          <md-option value="4" data-ng-repeat="productType in $ctrl.productTypes" tabindex="0" class="ng-scope md-ink-ripple" role="option"
-                                            aria-selected="false" id="select_option_18">
-                                            <div class="md-text ng-binding">Land</div>
-                                          </md-option>
-                                          <!-- end ngRepeat: productType in $ctrl.productTypes -->
-                                          <md-option value="6" data-ng-repeat="productType in $ctrl.productTypes" tabindex="0" class="ng-scope md-ink-ripple" role="option"
-                                            aria-selected="false" id="select_option_19">
-                                            <div class="md-text ng-binding">Hotel</div>
-                                          </md-option>
-                                          <!-- end ngRepeat: productType in $ctrl.productTypes -->
-                                          <md-option value="7" data-ng-repeat="productType in $ctrl.productTypes" tabindex="0" class="ng-scope md-ink-ripple" role="option"
-                                            aria-selected="false" id="select_option_20">
-                                            <div class="md-text ng-binding">Other</div>
-                                          </md-option>
-                                          <!-- end ngRepeat: productType in $ctrl.productTypes -->
-                                        </md-content>
-                                      </md-select-menu>
-                                    </div>
                                   </md-select>
-                                  <select class="md-visually-hidden" name="prop-type" aria-hidden="true" tabindex="-1">
-                                    <option value="">None</option>
-                                    <option value="" class="ng-binding"></option>
-                                    <option ng-value="$ctrl.requirements.product" selected="" aria-checked="false"></option>
-                                  </select>
-                                  <select class="md-visually-hidden" name="lease-type" aria-hidden="true" tabindex="-1">
-                                    <option value="">None</option>
-                                    <option value="" class="ng-binding"></option>
-                                    <option ng-value="$ctrl.requirements.lease_type" selected="" aria-checked="false"></option>
-                                  </select>
-                                </fieldset>
-                                <fieldset>
-                                  <legend class="label">SQFT Range</legend>
-                                  <div class="min-max-fields">
-                                    <div class="min">
-                                      <input type="text" id="sqft-min" name="sqft-min" placeholder="Min" aria-label="Min" comma-number="" data-ng-model="$ctrl.requirements.sqft.min"
-                                        data-ng-blur="$ctrl.updateRequirements()" class="ng-pristine ng-untouched ng-valid ng-empty"
-                                        aria-invalid="false">
-                                    </div>
-                                    <div>
-                                      <input type="text" id="sqft-max" name="sqft-max" placeholder="Max" aria-label="Max" comma-number="" data-ng-model="$ctrl.requirements.sqft.max"
-                                        data-ng-blur="$ctrl.updateRequirements()" class="ng-pristine ng-untouched ng-valid ng-empty"
-                                        aria-invalid="false">
-                                    </div>
-                                  </div>
-                                  <!-- ngIf: $ctrl.errors.sqftRange -->
-                                  <!-- ngIf: $ctrl.errors.sqftMinLessThanMax -->
-                                </fieldset>
-                                <fieldset>
-                                  <label for="other-specs">Other Specs</label>
-                                  <textarea placeholder="e.g. 20+ Free parking lot" id="other-specs" name="other-specs" data-ng-model="$ctrl.requirements.other"
-                                    data-ng-blur="$ctrl.updateRequirements()" class="ng-pristine ng-untouched ng-valid ng-empty"
-                                    aria-invalid="false"></textarea>
+                                  <label for="deal-structure">Deal Structure:</label>
+                                  <md-select name="deal-structure" placeholder="Select" class="ng-pristine ng-untouched ng-valid md-mbBroker-theme ng-empty" tabindex="0"
+                                    role="listbox">
+                                    <md-select-value class="md-select-value md-select-placeholder">
+                                      <span>Select</span>
+                                      <span class="md-select-icon" aria-hidden="true"></span>
+                                    </md-select-value>
+                                  </md-select>
+                                  <label>Location:</label>
+                                  <input type="text" value="Denver, CO">
+                                  <label>Amount:</label>
+                                  <input type="text" value="$0">
+                                  <label for="fee-type">Fee Type:</label>
+                                  <md-select name="fee-type" placeholder="Select" class="ng-pristine ng-untouched ng-valid md-mbBroker-theme ng-empty" tabindex="0"
+                                    role="listbox" style="border: 1px solid red">
+                                    <md-select-value class="md-select-value md-select-placeholder">
+                                      <span style="color: red">Consulting Fee</span>
+                                      <span style="color: red" class="md-select-icon" aria-hidden="true"></span>
+                                    </md-select-value>
+                                  </md-select>
                                 </fieldset>
                               </form>
                             </md-card-content>
